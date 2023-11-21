@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="En">
   <head>
     <!-- Mobile Specific Meta-->
     <meta
@@ -64,7 +64,7 @@
           </div>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li><a href="https://sakai.ug.edu.gh/portal">Sakai login</a></li>
+              <li><a href="Sakai login/index.html">Sakai login</a></li>
               <li><a href="htmlfolder/syllabus.html">Syllabus</a></li>
               <li><a href="AboutUs/about.html">About Us</a></li>
               <li><a href="/research-labs">Groups lab</a></li>
@@ -124,7 +124,12 @@
                       
                     </div></a
                   >
-                  <span class="react-like"> i like </span>
+                  <div id="likeButtonContainer"></div>
+<script type="text/babel">
+  // Render the LikeButton component in the specified container
+  ReactDOM.render(<LikeButton />, document.getElementById('likeButtonContainer'));
+</script>
+
                 </div>
                 <div class="col-lg-3">
                   <a class="single-feature" href="htmlfolder/javaconnex.html"
@@ -133,14 +138,18 @@
                     </div>
                     <div class="desc-wrap">
                       <p>
-                        Open the door to sought-after technology careers with a
-                        world-class Bachelor of Science in Computer Science
-                        degree.
+                        Learn JavaScript course ratings and reviews
+                         Super interactive course that spells most of the abstract parts of this language into an easy-to-digest manner.
                       </p>
                      
                     </div></a
                   >
-                  <span class="react-like"> i like </span>
+                  <div id="likeButtonContainer"></div>
+<script type="text/babel">
+  // Render the LikeButton component in the specified container
+  ReactDOM.render(<LikeButton />, document.getElementById('likeButtonContainer'));
+</script>
+
                 </div>
                 <div class="col-lg-3">
                   <a class="single-feature" href="/connect1/nodejsconnec.html"
@@ -149,27 +158,37 @@
                     </div>
                     <div class="desc-wrap">
                       <p>
-                        Embrace world class gradate education with unique blend
-                        of cutting-edge research and industry experience.
+                        The best way to learn React and Node.js is by combining online tutorials, 
+                        documentation, and hands-on practice. 
+                        Start by understanding the basics of JavaScript as both React and Node.js are based on it. 
                       </p>
                       
                     </div></a
                   >
-                  <span class="react-like">i like</span>
+                  <div id="likeButtonContainer"></div>
+<script type="text/babel">
+  // Render the LikeButton component in the specified container
+  ReactDOM.render(<LikeButton />, document.getElementById('likeButtonContainer'));
+</script>
+
                 </div>
                 <div class="col-lg-3">
                   <a class="single-feature" href="/connect 2/githubconnec.html"
                     ><div class="title" id="phd"><h4>Learn Git and Github</h4></div>
                     <div class="desc-wrap">
                       <p>
-                        Our PHDs lead the effort to extend the boundaries of
-                        knowledge through quality and industry relevant
-                        research.
+                        Learning Git and GitHub involves understanding the basics of version control and
+                         using the Git command line tool to manage code repositories locally.
                       </p>
                     
                     </div></a
                   >
-                  <span class="react-like"> i like</span>
+                  <div id="likeButtonContainer"></div>
+<script type="text/babel">
+  // Render the LikeButton component in the specified container
+  ReactDOM.render(<LikeButton />, document.getElementById('likeButtonContainer'));
+</script>
+
                 </div>
               </div>
             </div>
@@ -416,16 +435,18 @@
       </div>
     </footer>
     <!-- End footer Area-->
-   <!-- To load React add the scripts. -->
-<!-- Include React and ReactDOM -->
+ <!-- Add this script tag for React and Babel -->
 <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-
-<!-- Include Babel for JSX transformation (optional) -->
 <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 <!-- Your compiled React app -->
-<script  src="js/index.js"></script>
+<script type="text/babel" src="js/index.js"></script>
+
+<!-- Add this line to include the LikeButton component -->
+<script type="text/babel" src="js/LikeButton.js"></script>
+
+
 
 <script src="js/index.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>

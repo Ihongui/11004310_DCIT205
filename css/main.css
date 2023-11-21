@@ -5497,3 +5497,16 @@ strong {
         transform: rotate(360deg);
     }
 }
+/* Add this to your existing CSS or create a new stylesheet */
+.react-like {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .react-like:hover {
+    background-color: #2980b9;
+  }
+  

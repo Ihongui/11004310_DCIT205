@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Learn HTML5&CSS</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="css/github.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!--[if IE]>
+      <script
+        type="text/javascript"
+        src="http://stuk.github.io/jszip-utils/dist/jszip-utils-ie.js"
+      ></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="main">
+      <div id="content">
+        <div id="notice">
+          Welcome To University of Ghana, this is your first lesson in DCIT 205: MULTI MEDIA AND WEB DESIGN,
+          take note that we will get a quizzes every weeks on Sakai then learn well and hard.
+        </div>
+        <div>
+          <article role="article">
+            <header>
+              <h1 class="entry-title">HTML5 and CSS3 </h1>
+            </header>
+            <h2 id="introduction-to-html">Introduction to HTML</h2>
+            <h3 id="objectives">Objectives</h3>
+            <p>In this tutorial we are going to look at:</p>
+            <ul>
+              <li>What is HTML?</li>
+              <li>What is an element?</li>
+              <li>Webpage structure</li>
+              <li>Fundamental HTML elements</li>
+              <li>Special HTML characters</li>
+              <li>HTML commenting</li>
+            </ul>
+            <h3 id="goal">Goal</h3>
+            <p>
+              By the end of this tutorial you will have built website.
+             
+            </p>
+            <h4 id="what-is-html">What is HTML?</h4>
+            <p>
+              <strong>HTML</strong> is the language used to build websites. All
+              text and content that you see on the internet is built using HTML.
+            </p>
+            <p>
+              <strong>CSS</strong> is used with HTML to style the page. However
+              we will not be learning any of this today as this is covered in
+              the next tutorial.
+            </p>
+            <h4 id="what-does-html-stand-for">What does HTML stand for?</h4>
+            <p>
+              <strong>H</strong>yper <strong>T</strong>ext
+              <strong>M</strong>arkup <strong>L</strong>anguage
+            </p>
+            <h2 id="html-elements">HTML elements</h2>
+            <p>
+              An <strong>element</strong> is an HTML building block. There are
+              paragraphs, headings, links, lists, and
+             
+            </p>
+            <p>
+              HTML elements are made up of an opening tag, followed by content
+              then the closing tag.
+            </p>
+            <p>
+              <code class="language-plaintext highlighter-rouge"
+                ><tagname>some content</tagname></code
+              >
+            </p>
+            <p>
+              Some HTML elements do not need a closing tag as they are used to
+              place standalone elements on the webpage. For example:
+            </p>
+            <div class="language-html highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight">
+            
+                  <span class="nt"> <code class="language-plaintext highlighter-rouge"> &lt;hr&gt;   </code> </span>
+                  <span class="nt"> <code class="language-plaintext highlighter-rouge"> &lt;img&gt;   </code> </span>
+                
+                </pre>
+              </div>
+            </div>
+            <h2 id="webpage-structure">Webpage structure</h2>
+            <p>
+              The doctype is the first thing that must be defined in an HTML
+              page. It tells the browser which version of HTML the page is
+              using.
+            </p>
+            <div class="language-html highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt; </span></code></pre>
+              </div>
+            </div>
+            <p>
+              We will only be using html for now, but you can find more about
+              doctypes
+             
+            </p>
+            <p>
+              The doctype is always followed by the
+              <code class="language-plaintext highlighter-rouge">&lt;HTML&gt;</code> tag,
+              which contains the contents of your page.
+            </p>
+            <div class="language-html highlighter-rouge">
+              <div class="highlight">
+                <pre class="highlight">
+                  <code>
+                    <span class="cp">&lt;!DOCTYPE html&gt;</span>
+                    <span class="nt">&lt;html&gt;</span>
+                    <span class="nt">&lt;/html&gt;</span>
+                 </code>
+                </pre>
+              </div>
+            </div>
+            <h3 id="head-and-body-tags">HEAD and BODY tags</h3>
+            <p>
+              A HTML page is split into two parts. The <strong>head</strong> and
+              the <strong>body</strong>.
+            </p>
+            <p>
+              The <strong>head</strong> contains important webpage information
+              like the page title (the text in the browser tab), stylesheets,
+              scripts and meta information.
+            </p>
+            <p>
+              The <strong>body</strong> contains webpage content that is visible
+              to the user.
+            </p>
+            <h2 id="lets-get-coding">Let’s get coding!</h2>
+            <p>
+              Let’s start by defining the basic structure of your website.
+              Create a new folder for your work called “HTML tutorial 1”. Then
+              inside this folder create a new file called “index.html”.
+            </p>
+            <p>
+              Using what we just learnt, and with guidance from your coach,
+              create the following:
+            </p>
+            <ul>
+              <li>declare the doctype to be HTML</li>
+              <li>
+                open and close a set of
+                <code class="language-plaintext highlighter-rouge">&lt;html&gt; &lt;/html&gt;</code> tags
+              </li>
+              <li>Within this, create the head and body tags</li>
+            </ul>
+            <blockquote>
+              <p>
+                If you load this in your browser, do you see anything on the
+                page?
+              </p>
+            </blockquote>
+            <p>
+              Now inside your head tag create a
+              <code class="language-plaintext highlighter-rouge"
+                >&lt;title&gt;
+                  
+                <span class="nt">&lt;!DOCTYPE html&gt;</span>
+                <span class="nt">&lt;html&gt;</span>
+                <span class="nt">&lt;head&gt;</span>
+                <span class="nt">&lt;title&gt; fabrice website &lt;/title&gt;</span>
+                <span class="nt">&lt;/head&gt;</span>
+                <span class="nt">&lt;body&gt;</span>
+                <span class="nt">&lt;/body&gt;</span>
+                <span class="nt">&lt;/body&gt;</span>
+              </code>
+            </p>
+          </article>
+        </div>
+      </div>
+      <p>
+        Notice how each tag is indented to its parent tag. This is important as
+        it makes your code much easier to read and you’ll be able to see nested
+        tags much easier.
+      </p>
+      <h3 id="element-headings">Element: Headings</h3>
+      <p>Headings come in 6 sizes</p>
+      <h1 id="h1headingh1">
+        <code class="language-plaintext highlighter-rouge"
+          >&lt;h1&gt; Heading&lt;/h1&gt;</code
+        >
+      </h1>
+      <h2 id="h2headingh2">
+        <code class="language-plaintext highlighter-rouge"
+          >&lt;h2&gt; Heading &lt;/h2&gt;</code
+        >
+      </h2>
+      <h3 id="h3headingh3">
+        <code class="language-plaintext highlighter-rouge"
+          >&lt;h3&gt; Heading &lt;/h3&gt;</code
+        >
+      </h3>
+      <h4 id="h4headingh4">
+        <code class="language-plaintext highlighter-rouge"
+          >&lt;h4&gt; Heading &lt;/h4&gt;</code
+        >
+      </h4>
+      <h5 id="h5headingh5">
+        <code class="language-plaintext highlighter-rouge"
+          >&lt;h5&gt; Heading &lt;/h5&gt;</code
+        >
+      </h5>
+      <h6 id="h6headingh6">
+        <code class="language-plaintext highlighter-rouge"
+          >&lt;h6&gt; Heading &lt;/h6&gt;</code
+        >
+      </h6>
+      <p>
+        A <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> defines
+        the most important heading whereas a
+        <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code> defines the
+        least important.
+      </p>
+      <p>
+        Add a
+        <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> heading
+        tag, which includes the word Owls, inside the body tag of your page.
+      </p>
+      <h3 id="element-paragraph-p">
+        Element: Paragraph
+        <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>
+        <p><code class="language-plaintext highlighter-rouge"></code>&lt;p&gt;
+      </h3>
+      <p>
+        Putting content into a
+        <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>
+      </p>
+      <p>
+        tag will break your text up into paragraphs. This helps make the content
+        of your page easier to read for the user.
+      </p>
+      <p>
+        Add the following paragraph inside your
+        <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> tag, after
+        the <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>
+      </p>
+      <h1>
+        :
+        <p></p>
+        <div class="language-html highlighter-rouge">
+          <div class="highlight">
+            <pre class="highlight"><code><span class="nt">&lt;p&gt;
+  Most birds of prey sport eyes on the sides of their heads,
+  but the stereoscopic nature of the owl's forward-facing eyes permits the greater
+  sense of depth perception necessary for low-light hunting. 
+&lt;/p&gt;
+<span class="nt"></span></p></span>
+</code></pre>
+          </div>
+        </div>
+      </h1>
+      <h3 id="element-link-a">
+        Element: Link
+        <code class="language-plaintext highlighter-rouge">&lt;a&gt; &lt;/a&gt;</code>
+      </h3>
+      <a>
+        <p>
+          A link lets the user click through to another webpage. We use the
+          attribute
+          <code class="language-plaintext highlighter-rouge">href</code> to
+          indicate where you want the user to go.
+        </p>
+        <p>Let’s add a link to the bottom of your paragraph:</p>
+      </a>
+      <div class="language-html highlighter-rouge">
+        
+        <div class="highlight">
+          <a></a>
+          <pre
+            class="highlight"
+          ><a><code><span class="nt"><a< span=""> <span class="na">href=</span><span class="s">&lt;a href="https://en.wikipedia.org/wiki/Owl"&gt; More information about owls...&lt;/a&gt;</span><span class="nt">&gt;</span><span class="nt"></span></a<></span></code></a><code>
+</code></pre>
+        </div>
+      </div>
+      <h3 id="element-div-div">
+        Element: Div <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>
+        <div><code class="language-plaintext highlighter-rouge"></code></div>
+      </h3>
+      <p>
+        A <code class="language-plaintext highlighter-rouge">div</code> tag lets
+        you group elements together. Grouping elements is useful as we can later
+        style them together (e.g. giving them all the same colour).
+      </p>
+      <p>
+        Wrap your existing paragraph and link in a div and add a new heading to
+        it.
+      </p>
+      <div class="language-html highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight"><code><span class="nt">&lt;div&gt;
+  <span class="nt">&lt;h1&gt;Owls&lt;/h1&gt;<span class="nt"></span>
+  <span class="nt">&lt;p&gt;
+    Most birds of prey sport eyes on the sides of their heads,
+    but the stereoscopic nature of the owl's forward-facing eyes permits the greater
+    sense of depth perception necessary for low-light hunting.
+  &lt;/p&gt;
+
+    <span class="nt">&lt;a href="https://en.wikipedia.org/wiki/Owl"&gt; more read &lt;/a&gt;</span>
+    <span class="s"></span>
+<span class="nt">&lt;/div&gt;</span>
+    <span class="nt"></span>
+  <span class="nt"></span></a<>
+</span></p></span>
+<span class="nt"></span></div></span>
+</code></pre>
+        </div>
+      </div>
+      <h3 id="element-list-li">
+        Element: List <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>
+      
+      </h3>
+      <p>
+        There are two types of lists that can included on a webpage,
+        <strong>ordered</strong> and <strong>unordered</strong>. An unordered
+        list <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code>
+      </p>
+      &lt;ul&gt;
+        is defined with bullets whilst an ordered list
+        <code class="language-plaintext highlighter-rouge"> &lt;ol&gt;</code>
+        
+          <code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code>
+          uses a numbered sequence.
+          <p></p>
+          <p>
+            Let’s create a new
+            <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>
+          </p>
+          <h2>
+            then underneath list the reasons we love owls:
+            <p></p>
+            <div class="language-html highlighter-rouge">
+              <div class="highlight">
+                <preclass="highlight">
+                  <code>
+                    <span class="nt">&lt;h2&gt;Why do I like owls so much?&lt;h2&gt;</span>
+                    <span class="nt">&lt;ol&gt;
+                    <span class="nt">&lt;li&gt;they are adorable &lt;li&gt;</span>
+                    <span class="nt">&lt;li&gt;and lovely &lt;li&gt</span>
+                    <span class="nt"><li>&lt;li&gt;and cuddly &lt;li&gt</span>
+                    <span class="nt"></span>&lt;ol&gt;</span>
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <blockquote>
+              <p>
+                If you wanted to make this an unordered list, what would you
+                change? How could you check it worked? Try it, then change your
+                list back to an ordered list.
+              </p>
+            </blockquote>
+          </h2>
+          <h3 id="element-image-img">
+            Element: Image
+            <code class="language-plaintext highlighter-rouge">&lt;img&gt</code>
+          </h3>
+          <p>
+            So far we’ve learned a lot about how to add text to our page. Now
+            let’s add some images!
+          </p>
+          <p>
+            Before we start, we’ll need to add the image files we want to use to
+            the project folder. It’s very important to keep images in their own
+            folder, so first, create a folder called ‘images’ inside the same
+            folder as your HTML file. Next, download the images you’ll need. Do
+            this by right clicking on each of the following links, select ‘Save
+            Link As…’, and save it to the images folder you just created:
+          </p>
+          <ul>
+            <li>
+              <a href="/html/lesson1/images/logo.png" title="logo.png"
+                >logo.png</a
+              >
+            </li>
+            <li>
+              <a href="/html/lesson1/images/img1.jpg" title="img1.jpg"
+                >img1.jpg</a
+              >
+            </li>
+            <li>
+              <a href="/html/lesson1/images/img2.jpg" title="img2.jpg"
+                >img2.jpg</a
+              >
+            </li>
+            <li>
+              <a href="/html/lesson1/images/img3.jpg" title="img3.jpg"
+                >img3.jpg</a
+              >
+            </li>
+            <li>
+              <a href="/html/lesson1/images/img4.jpg" title="img4.jpg"
+                >img4.jpg</a
+              >
+            </li>
+            <li>
+              <a href="/html/lesson1/images/img5.jpg" title="img5.jpg"
+                >img5.jpg</a
+              >
+            </li>
+            <li>
+              <a href="/html/lesson1/images/img6.jpg" title="img6.jpg"
+                >img6.jpg</a
+              >
+            </li>
+          </ul>
+          <p>Images are primarily made up of three attributes</p>
+          <ul>
+            <li>
+              the
+              <code class="language-plaintext highlighter-rouge">&lt;img&gt</code>
+              tag
+            </li>
+            <li>
+              the
+              <code class="language-plaintext highlighter-rouge">src</code>
+              attribute, which lets the page know what image we want to view
+            </li>
+            <li>
+              the
+              <code class="language-plaintext highlighter-rouge">alt</code>
+              attribute, this provides extra information if the image cannot be
+              seen on the webpage for any reason
+            </li>
+          </ul>
+          <p>
+            In order for us to see this image on the webpage we need to link to
+            the image, this involves telling the webpage where it is and what it
+            is called. Before the main heading of the page, add the following
+          </p>
+          <div class="language-html highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight">
+                <code>
+                  <span class="nt">&lt;div&gt
+                  <span class="nt">&lt;img src="images/logo.png" alt="codebar.io"&gt</span>
+                  <span class="nt">&lt;div&gt</span>
+                </code>
+              </pre>
+            </div>
+          </div>
+          <p>
+            Here you can see we have told the
+            <code class="language-plaintext highlighter-rouge">src</code> of the
+            image to look in the images folder and display the image
+            <code class="language-plaintext highlighter-rouge">logo.png</code>,
+            then we have given it a relevant
+            <code class="language-plaintext highlighter-rouge">alt</code>
+            attribute.
+          </p>
+          <p>
+            Let’s add some more images. This time, we’ll put them in a list.
+          </p>
+          <p>
+            Do this underneath the
+            <code class="language-plaintext highlighter-rouge"></code>
+          </p>
+          &lt;h2&gt;
+            <code class="language-plaintext highlighter-rouge"
+              >Why do I like owls so much?</code
+            >
+            &lt;h2&gt;
+          heading.
+          </p>
+          <div class="language-html highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight">
+                <code>
+                <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt; &lt;img src="images/img1.jpg" alt="adorable"&gt;  &lt;li&gt</span>
+                <span class="nt">&lt;li&gt;  &lt;img src="images/img2.jpg" alt="lovely"&gt &lt;li&gt</span>
+                <span class="nt">&lt;li&gt; &lt;img src="images/img3.jpg" alt="cuddly"&gt;  &lt;li&gt</span>
+                <span class="nt">&lt;ul&gt;</span>
+                </code>
+              </pre>
+            </div>
+          </div>
+          <h2 id="adding-a-link-on-multiple-elements">
+            Adding a link on multiple elements
+          </h2>
+          <p>Links can contain many elements - not just text.</p>
+          <p>
+            Let’s use some pictures and text to link to a video. It can be handy
+            when we want the user to get to where we want without needing to
+            click on text.
+          </p>
+          <p>Add this underneath the ordered list about why we like owls.</p>
+          <div class="language-html highlighter-rouge">
+            <div class="highlight">
+              <pre class="highlight">
+                <code>
+                  <span class="nt">&lt;div&gt </span>
+                  <span class="nt">&lt;a href="https://www.youtube.com/watch?v=gBjnfgnwXic"&gt</span>
+                  <span class="nt">&lt;img src="images/img4.jpg" alt="cute owl"li&gt</span>
+                  <span class="nt">&lt;src="images/img5.jpg" alt="another cute owl"li&gt</span>
+                  <span class="nt">&lt;br&gt</span>
+                       Watch the video
+                 <span class="nt">&lt;/a&gt</span>
+                 <span class="nt">&lt;/div&gt</span>
+               </code>
+              </pre>
+            </div>
+          </div>
+          <blockquote>
+            <p>
+              Click any of the images. Can you get to the link’s page? What
+              happens if you take the
+              <code class="language-plaintext highlighter-rouge">&lt;br&gt</code>
+              tag out? Remember to put it back afterwards!
+            </p>
+          </blockquote>
+          <h2 id="formatting-text">Formatting text</h2>
+          <p>
+            We can also <em>emphasise</em> or make text
+            <strong>important</strong>. For emphasis we use
+            <code class="language-plaintext highlighter-rouge">&lt;em&gt &lt;/em&gt</code
+            ><em>
+              and for importance
+              <code class="language-plaintext highlighter-rouge"
+                >&lt;strong&gt &lt;/strong&gt</code
+            ></em>
+          </p>
+          <em
+            ><strong>
+              <p>Let’s emphasise some of the content of your paragraph</p>
+              <div class="language-html highlighter-rouge">
+                <div class="highlight">
+                  <pre class="highlight">
+                    <code>
+                      <span class="nt">
+                            &lt;p&gt <p style="color: black;">
+                            Most birds of prey sport eyes on the sides of their heads,
+                            but the stereoscopic nature of
+                            the owl's forward-facing </p>
+                           <span class="nt"> &lt;strong&gt <strong> permits the greater
+                            sense of depth perceptionnecessary for low-light hunting. &lt;strong&gt</strong>
+                            </span>
+                           <span class="nt">&lt;p&gt</span>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <h3 id="special-characters-and-more-formatting">
+                Special characters and more formatting
+              </h3>
+              <p>
+                Some characters have special meaning in HTML. For instance, we
+                use
+                <code class="language-plaintext highlighter-rouge">&lt;</code>
+                and
+                <code class="language-plaintext highlighter-rouge">&gt;</code>
+                to make HTML tags, and we use “ to wrap our attributes. But what
+                if we wanted to use those characters in our page?
+              </p>
+              <p>
+                One way is to use <strong>HTML entities</strong>. These are made
+                up of an ampersand, a name, then a semicolon. Here’s the HTML
+                entity for a quote character:
+                <code class="language-plaintext highlighter-rouge">"</code>.
+              </p>
+              <p>
+                You can also use a numerical format to produce special
+                characters.
+                <a href="http://htmlandcssbook.com/extras/html-escape-codes/"
+                  >Here’s a list</a
+                >
+                of some common entities.
+              </p>
+              <p>
+                Add a small rhyme to your page, in which the first sentence says
+                “The Owl &amp; the Pussy-cat” instead of “The Owl and the
+                Pussy-cat” using HTML entities for the ampersand:
+                <code class="language-plaintext highlighter-rouge">&amp;</code>.
+              </p>
+              <div class="language-html highlighter-rouge">
+                <div class="highlight">
+                  <pre class="highlight"><code><span class="nt"><div>
+  <span class="nt"><p>
+    <span class="nt"><strong></strong></span><strong>
+       "The Owl <span class="ni">&amp;</span> the Pussy-cat went to sea <span class="nt"><br></span> 
+        In a beautiful pea-green boat"
+    <span class="nt"></span></strong>
+  <span class="nt"></span></p></span>
+  <span class="nt"><small></small></span><small><span class="ni"></span> nursery rhyme<span class="nt"></span></small>
+<span class="nt"></span></div></span>
+</code></pre>
+                </div>
+              </div>
+              <p>
+                <code class="language-plaintext highlighter-rouge"
+                  ><small></small></code
+                ><small>
+                  is another html formatting element that you can use.</small
+                >
+              </p>
+              <small>
+                <blockquote>
+                  <p>
+                    Have you noticed how the character
+                    <code class="language-plaintext highlighter-rouge"></code>
+                    renders on the page?
+                  </p>
+                </blockquote>
+                <h3 id="mailto-links-a">
+                  mailto links
+                  <code class="language-plaintext highlighter-rouge"
+                    ><a></a
+                  ></code>
+                </h3>
+                <a>
+                  <p>
+                    Links can also open up a user’s email client and share
+                    content. The difference between links and mailto links is
+                    the content defined in the <strong>href</strong> attribute.
+                  </p>
+                </a>
+                <div class="language-html highlighter-rouge">
+                  <a></a>
+                  <div class="highlight">
+                    <a></a>
+                    <pre
+                      class="highlight"
+                    ><a><code><span class="nt"></span></code></a><code><ul><a>
+  <span class="nt"></span></a><li><a>
+     <span class="nt"><a< span=""> <span class="na">href=</span><span class="s">"mailto:</span></a<></span></a><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95e6faf6fcf4f9d5f6faf1f0f7f4e7bbfcfa">[email�&nbsp;protected]</a>?subject=I%20love%20owls%20::%20codebar"<span class="nt">&gt;</span>Email us<span class="nt"></span>
+  <span class="nt"></span></li>
+  <span class="nt"><li>
+     <span class="nt"><a< span=""> <span class="na">href=</span><span class="s">"mailto:?subject=I%20love%20owls%20::%20codebar"</span><span class="nt">&gt;</span>Email a friend<span class="nt"></span>
+  <span class="nt"></span></a<></span></li></span>
+<span class="nt"></span></ul>
+</code></pre>
+                  </div>
+                </div>
+                <blockquote>
+                  <p>What happens when you click the first link?</p>
+                </blockquote>
+                <blockquote>
+                  <p>
+                    What happens when you click the second link? How is it
+                    different?
+                  </p>
+                </blockquote>
+                <blockquote>
+                  <p>
+                    What happens when you add
+                    <code class="language-plaintext highlighter-rouge"
+                      >&amp;body=Owls%20are%20amazing</code
+                    >
+                    to the second link?
+                  </p>
+                </blockquote>
+                <p>
+                  Note that replacing spaces in the subject text with
+                  <strong>%20</strong> isn’t essential but makes sure the spaces
+                  are kept when opening the link in a range of both new and
+                  older email clients/software.
+                </p>
+                <h3 id="commenting">Commenting</h3>
+                <p>
+                  You can use a special kind of tag to add notes to our page
+                  that the computer will ignore. Comments are particularly
+                  useful when wanting to remind yourself, or other programmers,
+                  how your code works.
+                </p>
+                <div class="language-html highlighter-rouge">
+                  <div class="highlight">
+                    <pre
+                      class="highlight"
+                    ><code><span class="c">&lt;!-- Note to self: this is where the header goes --&gt</span>
+</code></pre>
+                  </div>
+                </div>
+                <h2 id="bonus">Bonus</h2>
+                <h3 id="twitter-share">Twitter share</h3>
+                <p>
+                  Add a share on twitter link along with your other sharing
+                  links.
+                </p>
+                <div class="language-html highlighter-rouge">
+                  <div class="highlight">
+                    <pre
+                      class="highlight"
+                    ><code><span class="nt">&lt;&lt;a href="https://twitter.com/home?status=I love owls! via @codebar&gt</span>
+</a<></span></code></pre>
+                  </div>
+                </div>
+                <hr />
+                <p>
+                  This ends our first lesson, we hope you enjoyed it and learnt
+                  something. 
+                  
+                </p>
+                
+                <footer>
+                  <p>page copy and modify by Fabrice Ihongui</p>
+                </footer>
+              </small></strong
+            ></em
+          >
+        </ol>
+      </ul>
+    </div>
+    <em
+      ><strong
+        ><small>
+          <script data-cfasync="false" src="js/email-decode.min.js"></script>
+          <script
+            type="45cf12c3df9f81b37a62114d-text/javascript"
+            src="js/downloader-bundle.js"
+          ></script>
+          <script
+            src="js/rocket-loader.min.js"
+            data-cf-settings="45cf12c3df9f81b37a62114d-|49"
+            defer=""
+          ></script> </small></strong
+    ></em>
+  </body>
+</html>
