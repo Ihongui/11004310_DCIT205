@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta content="website" property="og:type">
+  <meta content="app-id=1263413087" name="apple-itunes-app">
+  <meta content="M-70jYcq5Hj35EY_NQzm9MAPI6pfVrq-hqaiK13ZQeo" name="google-site-verification">
+  <link href="/manifest.json" rel="manifest">
+  <link href="/users/sign_up" rel="preconnect">
+  <link href="https://compliance.datacamp.com" rel="preconnect">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon-precomposed"
+    sizes="57x57">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed"
+    sizes="114x114">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed"
+    sizes="72x72">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed"
+    sizes="144x144">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-60x60.png" rel="apple-touch-icon-precomposed"
+    sizes="60x60">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-120x120.png" rel="apple-touch-icon-precomposed"
+    sizes="120x120">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon-precomposed"
+    sizes="76x76">
+  <link href="/marketing-backgrounds/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed"
+    sizes="152x152">
+  <link href="/marketing-backgrounds/favicons/favicon-196x196.png" rel="icon" sizes="196x196" type="image/png">
+  <link href="/marketing-backgrounds/favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+  <link href="/marketing-backgrounds/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="/marketing-backgrounds/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="/marketing-backgrounds/favicons/favicon-128.png" rel="icon" sizes="128x128" type="image/png">
+  <link href="https://images.datacamp.com" rel="preconnect">
+  <meta content="�&nbsp;" name="application-name">
+  <meta content="#FFFFFF" name="msapplication-TileColor">
+  <meta content="/marketing-backgrounds/favicons/mstile-144x144.png" name="msapplication-TileImage">
+  <meta content="/marketing-backgrounds/favicons/mstile-70x70.png" name="msapplication-square70x70logo">
+  <meta content="mstile-150x150.png" name="/marketing-backgrounds/favicons/msapplication-square150x150logo">
+  <meta content="mstile-310x150.png" name="/marketing-backgrounds/favicons/msapplication-wide310x150logo">
+  <meta content="mstile-310x310.png" name="/marketing-backgrounds/favicons/msapplication-square310x310logo">
+  <title>Github and Git Tutorial for DCS</title>
+
+  <link href="https://www.datacamp.com/tutorial/github-and-git-tutorial-for-beginners" rel="canonical">
+  <meta content="A beginner's tutorial demonstrating how Git version control works and why it is crucial for data science projects.
+" name="description">
+  <meta content="A beginner's tutorial demonstrating how Git version control works and why it is crucial for data science projects.
+" property="og:description">
+  <meta content="A beginner's tutorial demonstrating how Git version control works and why it is crucial for data science projects.
+" property="twitter:description">
+  <meta content="https://www.datacamp.com/tutorial/github-and-git-tutorial-for-beginners" property="og:url">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="@DataCamp" name="twitter:site">
+  <meta content="Github and Git Tutorial for Beginners " property="og:title">
+  <meta content="Github and Git Tutorial for Beginners " property="twitter:title">
+  <meta name="next-head-count" content="40">
+  <meta charset="UTF-8">
+  <link as="font" crossorigin="anonymous"
+    href="https://dcmfe.datacamp.com/assets/fonts/StudioFeixenSansRegular-english-v2.woff2" rel="preload"
+    type="font/woff2">
+  <link as="font" crossorigin="anonymous"
+    href="https://dcmfe.datacamp.com/assets/fonts/StudioFeixenSans-Semibold-english.woff2" rel="preload"
+    type="font/woff2">
+  <meta content="SVheSZoM0DmoV5ac2QhhADLAYXUKObJc20-w0uF3Rfg" name="google-site-verification">
+  <link rel="preload" href="/_next/static/css/f002fb689e48bb62.css" as="style">
+  <link rel="stylesheet" href="/_next/static/css/f002fb689e48bb62.css" data-n-g="">
+  <link rel="preload" href="/_next/static/css/b1e7d7322f56afe2.css" as="style">
+  <link rel="stylesheet" href="/_next/static/css/b1e7d7322f56afe2.css" data-n-p=""><noscript data-n-css=""></noscript>
+  <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script defer="" src="/_next/static/chunks/5b14ea9d-39da04efb53e908f.js"></script>
+  <script defer="" src="/_next/static/chunks/d21aa4f7-ca1e461ab8af1163.js"></script>
+  <script defer="" src="/_next/static/chunks/32476-fd74ad51bcf5157f.js"></script>
+  <script defer="" src="/_next/static/chunks/56321-e89f82017e31ef3e.js"></script>
+  <script defer="" src="/_next/static/chunks/3350.a5bfedbc00a0e0b8.js"></script>
+  <script defer="" src="/_next/static/chunks/11887.b967aa94b8408142.js"></script>
+  <script defer="" src="/_next/static/chunks/63907.a4df8cdfdd0a81bd.js"></script>
+  <script src="/_next/static/chunks/webpack-ed5b3b31d4d06fdf.js" defer=""></script>
+  <script src="/_next/static/chunks/framework-f468828219541f62.js" defer=""></script>
+  <script src="/_next/static/chunks/main-5664558a2d7c522d.js" defer=""></script>
+  <script src="/_next/static/chunks/pages/_app-f71140b233a115cd.js" defer=""></script>
+  <script src="/_next/static/chunks/22028-d0f449ddacf4b1ff.js" defer=""></script>
+  <script src="/_next/static/chunks/89077-415813d7a4845b41.js" defer=""></script>
+  <script src="/_next/static/chunks/63364-b22e44353230dcb2.js" defer=""></script>
+  <script src="/_next/static/chunks/89755-6d52a2b36a9e9a90.js" defer=""></script>
+  <script src="/_next/static/chunks/29238-523a093f8af0e1cc.js" defer=""></script>
+  <script src="/_next/static/chunks/13537-555e6c70f3b22ed0.js" defer=""></script>
+  <script src="/_next/static/chunks/59209-ceaf536b356cdb89.js" defer=""></script>
+  <script src="/_next/static/chunks/72529-6a546811e66923ae.js" defer=""></script>
+  <script src="/_next/static/chunks/68845-f5d76d7c07c6bcc0.js" defer=""></script>
+  <script src="/_next/static/chunks/76982-fb69c05ceef52631.js" defer=""></script>
+  <script src="/_next/static/chunks/59151-d77a3db7fe017606.js" defer=""></script>
+  <script src="/_next/static/chunks/57592-2f233a1642114f60.js" defer=""></script>
+  <script src="/_next/static/chunks/35996-7da4e08654b01487.js" defer=""></script>
+  <script src="/_next/static/chunks/88094-6ea05d2972d1f9f6.js" defer=""></script>
+  <script src="/_next/static/chunks/55629-2720e20f58ff6ac6.js" defer=""></script>
+  <script src="/_next/static/chunks/28979-1ba2f1fbda0a400a.js" defer=""></script>
+  <script src="/_next/static/chunks/55383-d163c3b3dc57add6.js" defer=""></script>
+  <script src="/_next/static/chunks/11156-37e239461aea7e99.js" defer=""></script>
+  <script src="/_next/static/chunks/51195-2fed38fc222f39ac.js" defer=""></script>
+  <script src="/_next/static/chunks/pages/tutorial/%5Bslug%5D-3fbdf1dec6145ff7.js" defer=""></script>
+  <script src="/_next/static/lhs3PyCL8mvPTt9xj2MQy/_buildManifest.js" defer=""></script>
+  <script src="/_next/static/lhs3PyCL8mvPTt9xj2MQy/_ssgManifest.js" defer=""></script>
+  <style id="__jsx-3060486263">
+    html,
+    body {
+      -webkit-scroll-behavior: auto !important;
+      -moz-scroll-behavior: auto !important;
+      -ms-scroll-behavior: auto !important;
+      scroll-behavior: auto !important;
+    }
+  </style>
+</head>
+
+<body style="display:block">
+  <style data-emotion="css jeybs">
+    .css-jeybs {
+      position: fixed;
+      right: 8px;
+      top: 8px;
+      z-index: 9999;
+    }
+  </style>
+  <div id="one_tap_container" class="css-jeybs"></div>
+  <div id="__next">
+    <div id="logo">
+      <img
+        src="images/comScience_logo.png"
+        alt="Department logo"
+        title=""
+        style="width: 250px"
+      />
+    </div>
+             
+          <div aria-hidden="true" class="ie-vsWrapper css-13l1vwz-MediaContainer">
+       
+                <div class="css-1rbe5y-MediaHeaderContent">
+                  <style data-emotion="css bvsd3r-MediaHeaderContent">
+                    .css-bvsd3r-MediaHeaderContent {
+                      color: #05192d;
+                      font-size: 2rem;
+                      line-height: 125%;
+                      margin-bottom: 16px;
+                      margin-top: 0;
+                    }
+
+                    @media screen and (min-width: 768px) {
+                      .css-bvsd3r-MediaHeaderContent {
+                        font-size: 2.5rem;
+                      }
+                    }
+                  </style>
+                  <style data-emotion="css 1sktyum-MediaHeaderContent">
+                    .css-1sktyum-MediaHeaderContent {
+                      box-sizing: border-box;
+                      margin: 0;
+                      min-width: 0;
+                      font-size: 2rem;
+                      font-weight: 700;
+                      letter-spacing: -1px;
+                      line-height: 1.2;
+                      margin: 0;
+                      color: #05192d;
+                      font-size: 2rem;
+                      line-height: 125%;
+                      margin-bottom: 16px;
+                      margin-top: 0;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1sktyum-MediaHeaderContent {
+                        font-size: 2.5rem;
+                      }
+                    }
+
+                    @media screen and (min-width: 768px) {
+                      .css-1sktyum-MediaHeaderContent {
+                        font-size: 2.5rem;
+                      }
+                    }
+                  </style>
+    <h1 data-testid="header-content" class="css-1sktyum-MediaHeaderContent">GitHub and Git Tutorial for
+                    Beginners </h1>
+                </div>
+                <style data-emotion="css kavufd-MediaHeaderContent">
+                  .css-kavufd-MediaHeaderContent {
+                    max-width: 696px;
+                    margin-bottom: 16px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                  }
+                </style>
+                <style data-emotion="css 1mtbsr3-MediaHeaderContent">
+                  .css-1mtbsr3-MediaHeaderContent {
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    max-width: 696px;
+                    margin-bottom: 16px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                  }
+                </style>
+                <div class="css-1mtbsr3-MediaHeaderContent">
+                  <style data-emotion="css 1q3y2dx-MediaHeaderContent">
+                    .css-1q3y2dx-MediaHeaderContent {
+                      font-size: 20px;
+                      font-weight: normal;
+                      line-height: 135%;
+                    }
+                  </style>
+                  <style data-emotion="css em3uwn-MediaHeaderContent">
+                    .css-em3uwn-MediaHeaderContent {
+                      box-sizing: border-box;
+                      margin: 0;
+                      min-width: 0;
+                      font-size: 1.5rem;
+                      letter-spacing: -0.5px;
+                      line-height: 1.2;
+                      margin-top: 0;
+                      font-size: 20px;
+                      font-weight: normal;
+                      line-height: 135%;
+                    }
+                  </style>
+    <div class="css-em3uwn-MediaHeaderContent">A beginner's tutorial demonstrating how Git version control
+                    works and why it is crucial for data science projects.
+                  </div>
+                </div>
+                <style data-emotion="css 1k06xkk-MediaHeaderContent">
+                  .css-1k06xkk-MediaHeaderContent {
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    -webkit-justify-content: start;
+                    justify-content: start;
+                  }
+                </style>
+                <style data-emotion="css b6b97u-MediaHeaderContent">
+                  .css-b6b97u-MediaHeaderContent {
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    -webkit-justify-content: start;
+                    justify-content: start;
+                  }
+                </style>
+                <div class="css-b6b97u-MediaHeaderContent">
+                  <style data-emotion="css 1h77qjk-MediaHeaderContent">
+                    .css-1h77qjk-MediaHeaderContent {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-appearance: none;
+                      -moz-appearance: none;
+                      -ms-appearance: none;
+                      appearance: none;
+                      background-color: #ffffff;
+                      border: 2px solid rgba(5, 25, 45, 0.6);
+                      border-radius: 4px;
+                      bottom: 8px;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-weight: 700;
+                      left: 6px;
+                      margin: 0;
+                      margin-right: 16px;
+                      position: fixed;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 6px;
+                      padding-bottom: 6px;
+                      text-align: center;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      z-index: 300;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                      .css-1h77qjk-MediaHeaderContent {
+                        display: none;
+                      }
+                    }
+                  </style><button class="css-1h77qjk-MediaHeaderContent">
+                    <style data-emotion="css 1bymenh-MediaHeaderContent">
+                      .css-1bymenh-MediaHeaderContent {
+                        margin-right: 0;
+                        width: 16px;
+                      }
+                    </style><svg viewBox="0 0 18 18" aria-hidden="false" class="css-1bymenh-MediaHeaderContent"
+                      height="18" role="img" width="18">
+                      <title>List</title>
+                      <path fill="currentColor"
+                        d="M6 6a1 1 0 110-2h10a1 1 0 010 2H6zm0 4a1 1 0 110-2h10a1 1 0 010 2H6zm0 4a1 1 0 010-2h10a1 1 0 010 2H6zM1 5a1 1 0 112 0 1 1 0 01-2 0zm0 4a1 1 0 112 0 1 1 0 01-2 0zm0 4a1 1 0 112 0 1 1 0 01-2 0z"
+                        fill-rule="evenodd"></path>
+                    </svg>
+                  </button>
+                  <style data-emotion="css dkcg16-MediaHeaderContent">
+                    .css-dkcg16-MediaHeaderContent {
+                      color: #626D79;
+                      font-size: 0.875rem;
+                      font-weight: 400;
+                      line-height: 130%;
+                    }
+                  </style>
+                  <style data-emotion="css 1j2pzeq-MediaHeaderContent">
+                    .css-1j2pzeq-MediaHeaderContent {
+                      box-sizing: border-box;
+                      margin: 0;
+                      min-width: 0;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      color: #626D79;
+                      font-size: 0.875rem;
+                      font-weight: 400;
+                      line-height: 130%;
+                    }
+                  </style>
+                  
+              </div>
+            </header>
+          </div>
+          <style data-emotion="css vjrxx1-SlugPage">
+            .css-vjrxx1-SlugPage {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column-reverse;
+              -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+              gap: 0;
+              margin: auto;
+              max-width: 696px;
+            }
+
+            @media screen and (min-width: 1200px) {
+              .css-vjrxx1-SlugPage {
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                gap: 38px;
+                max-width: 100%;
+              }
+            }
+
+            @media screen and (min-width: 1366px) {
+              .css-vjrxx1-SlugPage {
+                gap: 56px;
+              }
+            }
+          </style>
+          <style data-emotion="css k5sp3t-SlugPage">
+            .css-k5sp3t-SlugPage {
+              box-sizing: border-box;
+              margin: 0;
+              min-width: 0;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-direction: column-reverse;
+              -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+              gap: 0;
+              margin: auto;
+              max-width: 696px;
+            }
+
+            @media screen and (min-width: 1200px) {
+              .css-k5sp3t-SlugPage {
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                gap: 38px;
+                max-width: 100%;
+              }
+            }
+
+            @media screen and (min-width: 1366px) {
+              .css-k5sp3t-SlugPage {
+                gap: 56px;
+              }
+            }
+          </style>
+          <div class="css-k5sp3t-SlugPage">
+            <style data-emotion="css 1qdvx47-MediaSideSection">
+              .css-1qdvx47-MediaSideSection {
+                -webkit-align-items: flex-end;
+                -webkit-box-align: flex-end;
+                -ms-flex-align: flex-end;
+                align-items: flex-end;
+                -webkit-align-self: flex-end;
+                -ms-flex-item-align: flex-end;
+                align-self: flex-end;
+                bottom: 0;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                height: 100%;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                -webkit-justify-content: start;
+                justify-content: start;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                overflow-x: hidden;
+                overflow-y: auto;
+                padding-left: 0;
+                position: static;
+                padding-right: 0;
+                width: 100%;
+              }
+
+              @media screen and (min-width: 1200px) {
+                .css-1qdvx47-MediaSideSection {
+                  margin-bottom: 168px;
+                  margin-left: 16px;
+                  margin-right: 0;
+                  padding-left: 0;
+                  position: -webkit-sticky;
+                  position: sticky;
+                  padding-right: 16px;
+                  width: 180px;
+                }
+              }
+            </style>
+            <aside class="css-1qdvx47-MediaSideSection">
+              <style data-emotion="css 4hnqzc-MediaSideSection">
+                .css-4hnqzc-MediaSideSection {
+                  -webkit-flex-direction: column-reverse;
+                  -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse;
+                  -webkit-box-pack: justify;
+                  -webkit-justify-content: space-between;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                @media screen and (min-width: 768px) {
+                  .css-4hnqzc-MediaSideSection {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                }
+
+                @media screen and (min-width: 1200px) {
+                  .css-4hnqzc-MediaSideSection {
+                    width: 180px;
+                  }
+                }
+              </style>
+              <style data-emotion="css 15q9685-MediaSideSection">
+                .css-15q9685-MediaSideSection {
+                  box-sizing: border-box;
+                  margin: 0;
+                  min-width: 0;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-flex-direction: column-reverse;
+                  -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse;
+                  -webkit-box-pack: justify;
+                  -webkit-justify-content: space-between;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+
+                @media screen and (min-width: 768px) {
+                  .css-15q9685-MediaSideSection {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                  }
+                }
+
+                @media screen and (min-width: 1200px) {
+                  .css-15q9685-MediaSideSection {
+                    width: 180px;
+                  }
+                }
+              </style>
+              <div class="css-15q9685-MediaSideSection">
+                <style data-emotion="css s47ljk-MediaSideSection">
+                  .css-s47ljk-MediaSideSection {
+                    -webkit-flex: 1;
+                    -ms-flex: 1;
+                    flex: 1;
+                  }
+
+                  .css-s47ljk-MediaSideSection a:active,
+                  .css-s47ljk-MediaSideSection a:focus,
+                  .css-s47ljk-MediaSideSection a:hover {
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                  }
+                </style>
+                <style data-emotion="css 13b5ylv-MediaSideSection">
+                  .css-13b5ylv-MediaSideSection {
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    -webkit-flex: 1;
+                    -ms-flex: 1;
+                    flex: 1;
+                  }
+
+                  .css-13b5ylv-MediaSideSection a:active,
+                  .css-13b5ylv-MediaSideSection a:focus,
+                  .css-13b5ylv-MediaSideSection a:hover {
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                  }
+                </style>
+                <div class="css-13b5ylv-MediaSideSection">
+                  <style data-emotion="css 1q8wvrs-MediaSharingButtons">
+                    .css-1q8wvrs-MediaSharingButtons {
+                      -webkit-align-items: start;
+                      -webkit-box-align: start;
+                      -ms-flex-align: start;
+                      align-items: start;
+                      display: none;
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      padding-left: 8px;
+                      width: 180px;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                      .css-1q8wvrs-MediaSharingButtons {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                      }
+                    }
+                  </style>
+                  <style data-emotion="css r1311i-MediaSharingButtons">
+                    .css-r1311i-MediaSharingButtons {
+                      box-sizing: border-box;
+                      margin: 0;
+                      min-width: 0;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: start;
+                      -webkit-box-align: start;
+                      -ms-flex-align: start;
+                      align-items: start;
+                      display: none;
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      padding-left: 8px;
+                      width: 180px;
+                    }
+
+                    @media screen and (min-width: 1200px) {
+                      .css-r1311i-MediaSharingButtons {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                      }
+                    }
+                  </style>
+                  <div class="css-r1311i-MediaSharingButtons">
+                    <style data-emotion="css 1ex8ei9-MediaSharingButtons">
+                      .css-1ex8ei9-MediaSharingButtons {
+                        font-size: 12px;
+                        font-weight: 800;
+                        letter-spacing: 1.5px;
+                        line-height: 15px;
+                        padding-bottom: 20px;
+                        text-transform: uppercase;
+                      }
+                    </style>
+                    <style data-emotion="css 3q5jph-MediaSharingButtons">
+                      .css-3q5jph-MediaSharingButtons {
+                        box-sizing: border-box;
+                        margin: 0;
+                        min-width: 0;
+                        color: #05192D;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        font-size: 12px;
+                        font-weight: 800;
+                        letter-spacing: 1.5px;
+                        line-height: 15px;
+                        padding-bottom: 20px;
+                        text-transform: uppercase;
+                      }
+                    </style>
+                    <style data-emotion="css 1hob8n4-MediaSharingButtons">
+                      .css-1hob8n4-MediaSharingButtons {
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                        width: 152px;
+                      }
+                    </style>
+                    <style data-emotion="css j593r5-MediaSharingButtons">
+                      .css-j593r5-MediaSharingButtons {
+                        box-sizing: border-box;
+                        margin: 0;
+                        min-width: 0;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                        width: 152px;
+                      }
+                    </style>
+                    <div class="css-j593r5-MediaSharingButtons"><a data-heap-redact-attributes="href"
+                        class="css-10u6x3f-Box">
+                        <style data-emotion="css ixt4tq-MediaSharingButtons">
+                          .css-ixt4tq-MediaSharingButtons {
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            height: 32px;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            width: 32px;
+                            background-color: #efebe4;
+                          }
+
+                          .css-ixt4tq-MediaSharingButtons:hover {
+                            background-color: #e5e1da;
+                            cursor: pointer;
+                          }
+                        </style>
+                        <style data-emotion="css 1srxo3g-MediaSharingButtons">
+                          .css-1srxo3g-MediaSharingButtons {
+                            box-sizing: border-box;
+                            margin: 0;
+                            min-width: 0;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            height: 32px;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            width: 32px;
+                            background-color: #efebe4;
+                          }
+
+                          .css-1srxo3g-MediaSharingButtons:hover {
+                            background-color: #e5e1da;
+                            cursor: pointer;
+                          }
+                        </style>
+                        <div class="css-1srxo3g-MediaSharingButtons">
+                          <style data-emotion="css 1iysg7s-MediaSharingButtons">
+                            .css-1iysg7s-MediaSharingButtons {
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              display: -webkit-box;
+                              display: -webkit-flex;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              -webkit-justify-content: center;
+                              justify-content: center;
+                              color: #6B6A67;
+                              height: 14px;
+                              width: 14px;
+                            }
+                          </style>
+                        </div>
+                      </a>
+                        <div class="css-1srxo3g-MediaSharingButtons">
+                          <style data-emotion="css 1mz6bi7-MediaSharingButtons">
+                            .css-1mz6bi7-MediaSharingButtons {
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              display: -webkit-box;
+                              display: -webkit-flex;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              -webkit-justify-content: center;
+                              justify-content: center;
+                              color: #6B6A67;
+                              height: 16px;
+                              width: 16px;
+                            }
+                          </style>
+                            
+                        </div>
+                      
+                        <div class="css-1srxo3g-MediaSharingButtons">
+                          <style data-emotion="css 10unihn-MediaSharingButtons">
+                            .css-10unihn-MediaSharingButtons {
+                              -webkit-align-items: center;
+                              -webkit-box-align: center;
+                              -ms-flex-align: center;
+                              align-items: center;
+                              display: -webkit-box;
+                              display: -webkit-flex;
+                              display: -ms-flexbox;
+                              display: flex;
+                              -webkit-box-pack: center;
+                              -ms-flex-pack: center;
+                              -webkit-justify-content: center;
+                              justify-content: center;
+                              color: #6B6A67;
+                              height: 18px;
+                              width: 18px;
+                            }
+                          </style><svg viewBox="0 0 18 18" aria-hidden="false" class="css-10unihn-MediaSharingButtons"
+                           
+                        </div>
+                      </a>
+                      <div class="css-1srxo3g-MediaSharingButtons">
+                        <style data-emotion="css 1c42ygh-MediaSharingButtons">
+                          .css-1c42ygh-MediaSharingButtons {
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            color: #05192D;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            font-weight: 400;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                          }
+                        </style>
+                        <style data-emotion="css s035d9-MediaSharingButtons">
+                          .css-s035d9-MediaSharingButtons {
+                            box-sizing: border-box;
+                            margin: 0;
+                            min-width: 0;
+                            color: #05192D;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                            color: #05192D;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            font-weight: 400;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                          }
+                        </style>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <style data-emotion="css lze4ua-SlugPage">
+              .css-lze4ua-SlugPage {
+                max-width: 696px;
+                width: auto;
+              }
+
+              .css-lze4ua-SlugPage div.author-biography:last-of-type {
+                border-bottom: 2px solid rgba(5, 25, 45, 0.1);
+              }
+            </style>
+            <style data-emotion="css 92mm3t-SlugPage">
+              .css-92mm3t-SlugPage {
+                box-sizing: border-box;
+                margin: 0;
+                min-width: 0;
+                max-width: 696px;
+                width: auto;
+              }
+
+              .css-92mm3t-SlugPage div.author-biography:last-of-type {
+                border-bottom: 2px solid rgba(5, 25, 45, 0.1);
+              }
+            </style>
+            <div class="css-92mm3t-SlugPage">
+              <style data-emotion="css 1ur3ixt-SlugPage">
+                .css-1ur3ixt-SlugPage {
+                  margin: 0 auto;
+                  max-width: 696px;
+                  width: 100%;
+                }
+              </style>
+              <style data-emotion="css 1hskgqj-SlugPage">
+                .css-1hskgqj-SlugPage {
+                  box-sizing: border-box;
+                  margin: 0;
+                  min-width: 0;
+                  margin: 0 auto;
+                  max-width: 696px;
+                  width: 100%;
+                }
+              </style>
+              <div class="css-1hskgqj-SlugPage">
+                <style data-emotion="css t96y5f-RichText">
+                  .css-t96y5f-RichText {
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                  }
+
+                  .css-t96y5f-RichText .overflow-content {
+                    overflow-x: auto;
+                  }
+                </style>
+                <style data-emotion="css 1eh0rav-RichText">
+                  .css-1eh0rav-RichText {
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                  }
+
+                  .css-1eh0rav-RichText .overflow-content {
+                    overflow-x: auto;
+                  }
+                </style>
+                <div class="css-1eh0rav-RichText">
+                  <style data-emotion="css 1kn66x1-RichText">
+                    .css-1kn66x1-RichText {
+                      margin-bottom: 24px;
+                    }
+
+                    .css-1kn66x1-RichText a {
+                      color: #0075AD;
+                      font-weight: 700;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1kn66x1-RichText a:active,
+                    .css-1kn66x1-RichText a:focus,
+                    .css-1kn66x1-RichText a:hover {
+                      -webkit-text-decoration: underline;
+                      text-decoration: underline;
+                    }
+
+                    .css-1kn66x1-RichText a u {
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1kn66x1-RichText root {
+                      font-family: Studio-Feixen-Sans, Arial;
+                      margin: 0;
+                      -moz-osx-font-smoothing: grayscale;
+                      -webkit-font-smoothing: antialiased;
+                    }
+
+                    .css-1kn66x1-RichText * {
+                      max-width: 100%;
+                    }
+
+                    .css-1kn66x1-RichText .ai-code-explanation {
+                      background: #EFEBE4;
+                      color: #05192D;
+                      display: none;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 14px;
+                      line-height: 1.5;
+                      overflow-x: hidden;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      white-space: pre-line;
+                    }
+
+                    .css-1kn66x1-RichText .ai-code-explanation:before {
+                      content: '• ';
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      background-color: transparent;
+                      border: 2px solid #05192D;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 12px;
+                      font-weight: 800;
+                      height: 32px;
+                      padding: 8px;
+                      padding-top: 0;
+                      padding-bottom: 0;
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-button::after {
+                      content: attr(data-value);
+                      margin-left: 8px;
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-button:active:not(:disabled),
+                    .css-1kn66x1-RichText .ai-explain-code-button:hover {
+                      background-color: rgba(48, 57, 105, 0.06);
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-negative-feedback-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      padding-top: 4px;
+                      padding-bottom: 4px;
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-negative-feedback-button:hover {
+                      background: #E5E1DA;
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-positive-feedback-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      padding-top: 4px;
+                      padding-bottom: 4px;
+                    }
+
+                    .css-1kn66x1-RichText .ai-explain-code-positive-feedback-button:hover {
+                      background: #E5E1DA;
+                    }
+
+                    .css-1kn66x1-RichText .ai-feedback {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-align-self: flex-end;
+                      -ms-flex-item-align: flex-end;
+                      align-self: flex-end;
+                      background: #EFEBE4;
+                      border-top: 1px solid #E1E1E8;
+                      color: #213147;
+                      display: none;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 12px;
+                      line-height: 1.5;
+                      overflow-x: hidden;
+                      padding: 8px;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      width: 100%;
+                    }
+
+                    .css-1kn66x1-RichText .ai-powered-text {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 10px;
+                      line-height: 1.5;
+                      margin-left: auto;
+                      overflow-x: hidden;
+                    }
+
+                    .css-1kn66x1-RichText .ai-powered-text::before {
+                      content: '';
+                    }
+
+                    @media screen and (min-width: 480px) {
+                      .css-1kn66x1-RichText .ai-powered-text::before {
+                        content: 'Powered by  ';
+                      }
+                    }
+
+                    .css-1kn66x1-RichText .ai-powered-text svg {
+                      height: 16px;
+                      width: 16px;
+                    }
+
+                    .css-1kn66x1-RichText .ai-was-this-helpful {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      gap: 4px;
+                    }
+
+                    @media screen and (min-width: 480px) {
+                      .css-1kn66x1-RichText .ai-was-this-helpful {
+                        gap: 8px;
+                      }
+                    }
+
+                    @media screen and (min-width: 768px) {
+                      .css-1kn66x1-RichText .ai-was-this-helpful {
+                        gap: 16px;
+                      }
+                    }
+
+                    .css-1kn66x1-RichText .atrule,
+                    .css-1kn66x1-RichText .attr-value,
+                    .css-1kn66x1-RichText .keyword {
+                      color: #008031;
+                    }
+
+                    .css-1kn66x1-RichText .attrName,
+                    .css-1kn66x1-RichText .builtin,
+                    .css-1kn66x1-RichText .char,
+                    .css-1kn66x1-RichText .inserted,
+                    .css-1kn66x1-RichText .selector,
+                    .css-1kn66x1-RichText .string,
+                    .css-1kn66x1-RichText .url {
+                      color: #5646A5;
+                    }
+
+                    .css-1kn66x1-RichText .boolean,
+                    .css-1kn66x1-RichText .constant,
+                    .css-1kn66x1-RichText .deleted,
+                    .css-1kn66x1-RichText .number,
+                    .css-1kn66x1-RichText .property,
+                    .css-1kn66x1-RichText .symbol,
+                    .css-1kn66x1-RichText .tag {
+                      color: #B75900;
+                    }
+
+                    .css-1kn66x1-RichText .cdata,
+                    .css-1kn66x1-RichText .comment,
+                    .css-1kn66x1-RichText .doctype,
+                    .css-1kn66x1-RichText .prolog {
+                      color: #5D6A77;
+                    }
+
+                    .css-1kn66x1-RichText .className,
+                    .css-1kn66x1-RichText .function {
+                      color: #0065D1;
+                    }
+
+                    .css-1kn66x1-RichText .code-block-footer {
+                      background-color: #EFEBE4;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: justify;
+                      -webkit-justify-content: space-between;
+                      justify-content: space-between;
+                      min-width: -webkit-fit-content;
+                      min-width: -moz-fit-content;
+                      min-width: fit-content;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      width: 100%;
+                    }
+
+                    .css-1kn66x1-RichText .code-copy-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      background-color: #E5E1DA;
+                      border-radius: 50%;
+                      color: #5D6A77;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 12px;
+                      font-weight: 800;
+                      height: 32px;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      line-height: 1.5;
+                      padding: 0;
+                      position: absolute;
+                      right: 16px;
+                      text-shadow: none;
+                      top: 16px;
+                      width: 32px;
+                    }
+
+                    .css-1kn66x1-RichText .code-copy-button svg {
+                      color: #5D6A77;
+                    }
+
+                    .css-1kn66x1-RichText .datacamp-exercise {
+                      margin-top: 30px;
+                    }
+
+                    .css-1kn66x1-RichText .no-bottom-margin {
+                      margin-bottom: 0 !important;
+                    }
+
+                    .css-1kn66x1-RichText .no-top-margin {
+                      margin-top: 0 !important;
+                    }
+
+                    .css-1kn66x1-RichText .p-margin {
+                      margin-bottom: 14px !important;
+                    }
+
+                    .css-1kn66x1-RichText .parent {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                    }
+
+                    .css-1kn66x1-RichText .workspace-link {
+                      color: #6B6A67;
+                      cursor: pointer;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 10px;
+                      font-weight: 800;
+                      height: 29px;
+                      letter-spacing: 1.5px;
+                      line-height: 12.5px;
+                      padding: 0;
+                      text-shadow: none;
+                      text-transform: uppercase;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                    }
+
+                    .css-1kn66x1-RichText .workspace-link:active,
+                    .css-1kn66x1-RichText .workspace-link:focus,
+                    .css-1kn66x1-RichText .workspace-link:hover {
+                      color: #575653;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1kn66x1-RichText center {
+                      margin-top: 24px;
+                      margin-bottom: 24px;
+                    }
+
+                    .css-1kn66x1-RichText code {
+                      border-radius: 4px;
+                      min-height: 64px;
+                      padding: 4px;
+                    }
+
+                    .css-1kn66x1-RichText code[class*="language-"] {
+                      font-family: JetBrainsMonoNL;
+                      font-size: 0.875rem;
+                      font-weight: normal;
+                      line-height: 21px;
+                      white-space: pre-wrap;
+                    }
+
+                    .css-1kn66x1-RichText code[class*=language-]::selection {
+                      background-color: #E5E1DA;
+                    }
+
+                    .css-1kn66x1-RichText div[data-datacamp-exercise] {
+                      display: inline-block;
+                      max-width: 100%;
+                      overflow-x: auto;
+                    }
+
+                    .css-1kn66x1-RichText div[data-start-time] {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-flex-wrap: wrap;
+                      -webkit-flex-wrap: wrap;
+                      -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+                      max-width: 100%;
+                    }
+
+                    .css-1kn66x1-RichText h2 {
+                      font-size: 1.75rem;
+                      font-weight: 700;
+                      letter-spacing: -0.5px;
+                      line-height: 1.2;
+                      margin-top: 16px;
+                      margin-bottom: 16px;
+                      scroll-margin-top: 80px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1kn66x1-RichText h2 {
+                        font-size: 2rem;
+                        margin-top: 24px;
+                        margin-bottom: 24px;
+                      }
+                    }
+
+                    .css-1kn66x1-RichText h3 {
+                      font-size: 1.25rem;
+                      margin-top: 8px;
+                      margin-bottom: 8px;
+                      scroll-margin-top: 80px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1kn66x1-RichText h3 {
+                        font-size: 1.5rem;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                      }
+                    }
+
+                    .css-1kn66x1-RichText h4 {
+                      font-size: 1.125rem;
+                      margin-bottom: 16px;
+                      margin-top: 8px;
+                      scroll-margin-top: 80px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1kn66x1-RichText h4 {
+                        font-size: 1.25rem;
+                      }
+                    }
+
+                    .css-1kn66x1-RichText iframe {
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    }
+
+                    .css-1kn66x1-RichText img {
+                      border: 1px solid #05192d1a;
+                      height: auto;
+                      margin-top: 24px;
+                      margin-bottom: 24px;
+                    }
+
+                    .css-1kn66x1-RichText li {
+                      font-size: 1rem;
+                      margin-bottom: 12px;
+                    }
+
+                    .css-1kn66x1-RichText li>code,
+                    .css-1kn66x1-RichText p>code,
+                    .css-1kn66x1-RichText h4>code {
+                      background-color: #f7f3eb;
+                      color: #05192d;
+                    }
+
+                    .css-1kn66x1-RichText li>p {
+                      margin-bottom: 0;
+                    }
+
+                    .css-1kn66x1-RichText ol {
+                      display: inline-block;
+                      list-style: decimal;
+                      margin-bottom: 24px;
+                      padding-left: 32px;
+                    }
+
+                    .css-1kn66x1-RichText p {
+                      font-size: 1rem;
+                      max-width: 100%;
+                      margin-bottom: 24px;
+                      min-width: 100%;
+                    }
+
+                    .css-1kn66x1-RichText p * {
+                      font-family: Studio-Feixen-Sans !important;
+                    }
+
+                    .css-1kn66x1-RichText pre {
+                      background-color: #F7F3EB;
+                      border-radius: 4px;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      margin-bottom: 24px;
+                      padding: 0;
+                      position: relative;
+                    }
+
+                    .css-1kn66x1-RichText pre code {
+                      background-color: #F7F3EB;
+                      color: #05192d;
+                      display: inline-block;
+                      max-width: 100%;
+                      overflow-x: auto;
+                      padding: 16px;
+                      text-shadow: none;
+                    }
+
+                    .css-1kn66x1-RichText pre code::-webkit-scrollbar {
+                      background-color: transparent;
+                      height: 26px;
+                      scroll-padding-bottom: 8px;
+                    }
+
+                    .css-1kn66x1-RichText pre code::-webkit-scrollbar-thumb {
+                      background-color: #6B6A67;
+                      border: 8px solid;
+                      border-color: #f7f3eb;
+                      border-radius: 20px;
+                      opacity: 0.4;
+                    }
+
+                    .css-1kn66x1-RichText pre code::-webkit-scrollbar-thumb:hover {
+                      background-color: #575653;
+                    }
+
+                    .css-1kn66x1-RichText pre code[class*="language-"] {
+                      border-radius: 0;
+                      white-space: pre;
+                    }
+
+                    .css-1kn66x1-RichText pre[class*="language-"]::selection,
+                    .css-1kn66x1-RichText pre[class*="language-"] ::selection,
+                    .css-1kn66x1-RichText code[class*="language-"]::selection,
+                    .css-1kn66x1-RichText code[class*="language-"] ::selection {
+                      background-color: #E5E1DA;
+                    }
+
+                    .css-1kn66x1-RichText table {
+                      background-color: #F7F3EB !important;
+                      border: 1px solid !important;
+                      border-color: #E8E8EE !important;
+                      border-radius: 4px !important;
+                      border-spacing: 0px;
+                      font-size: 0.875rem;
+                      height: auto !important;
+                      margin-bottom: 24px;
+                      width: 100% !important;
+                    }
+
+                    .css-1kn66x1-RichText table::-webkit-scrollbar {
+                      display: block;
+                    }
+
+                    .css-1kn66x1-RichText table::-webkit-scrollbar-thumb {
+                      background-color: #6B6A67;
+                      border: 4px solid;
+                      border-color: #ffffff;
+                      border-radius: 20px;
+                      opacity: 0.4;
+                    }
+
+                    .css-1kn66x1-RichText table::-webkit-scrollbar-thumb:hover {
+                      background-color: #575653;
+                    }
+
+                    .css-1kn66x1-RichText table col {
+                      border: 1px solid !important;
+                      border-color: transparent !important;
+                    }
+
+                    .css-1kn66x1-RichText table colgroup {
+                      width: 100% !important;
+                    }
+
+                    .css-1kn66x1-RichText table tbody {
+                      width: 100% !important;
+                    }
+
+                    .css-1kn66x1-RichText table tbody tr th {
+                      text-align: initial;
+                    }
+
+                    .css-1kn66x1-RichText table tbody tr th:only-of-type {
+                      text-align: center;
+                    }
+
+                    .css-1kn66x1-RichText table tbody tr:first-child td {
+                      background-color: #F7F3EB !important;
+                      font-weight: 700;
+                    }
+
+                    .css-1kn66x1-RichText table tbody tr:last-child td {
+                      border-bottom: 1px solid white !important;
+                    }
+
+                    .css-1kn66x1-RichText table td {
+                      background-color: white !important;
+                      border: none;
+                      border-top: #E8E8EE 1px solid;
+                      height: auto !important;
+                    }
+
+                    .css-1kn66x1-RichText table td,
+                    .css-1kn66x1-RichText table th {
+                      padding: 15px 12px;
+                      text-overflow: ellipsis;
+                    }
+
+                    .css-1kn66x1-RichText table th {
+                      background-color: #F7F3EB !important;
+                      border: 1px solid;
+                      border-color: #F7F3EB;
+                    }
+
+                    .css-1kn66x1-RichText table thead+tbody tr:first-child td {
+                      background: white !important;
+                      font-weight: normal;
+                    }
+
+                    .css-1kn66x1-RichText table thead tr {
+                      background-color: #F7F3EB !important;
+                      border: 1px solid;
+                      border-color: #F7F3EB;
+                    }
+
+                    .css-1kn66x1-RichText table thead tr th {
+                      border: none;
+                      text-align: initial;
+                    }
+
+                    .css-1kn66x1-RichText table tr {
+                      border-bottom: 1px solid !important;
+                      border-color: #E8E8EE !important;
+                      height: auto !important;
+                    }
+
+                    .css-1kn66x1-RichText table+table {
+                      margin-top: 24px;
+                    }
+
+                    .css-1kn66x1-RichText ul {
+                      list-style: disc;
+                      margin-bottom: 24px;
+                      padding-left: 32px;
+                    }
+                  </style>
+                  <style data-emotion="css 1j302im-RichText">
+                    .css-1j302im-RichText {
+                      box-sizing: border-box;
+                      margin: 0;
+                      min-width: 0;
+                      font-size: 1.125rem;
+                      line-height: 1.5;
+                      margin-top: 0;
+                      margin-bottom: 24px;
+                    }
+
+                    .css-1j302im-RichText a {
+                      color: #0075AD;
+                      font-weight: 700;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1j302im-RichText a:active,
+                    .css-1j302im-RichText a:focus,
+                    .css-1j302im-RichText a:hover {
+                      -webkit-text-decoration: underline;
+                      text-decoration: underline;
+                    }
+
+                    .css-1j302im-RichText a u {
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1j302im-RichText root {
+                      font-family: Studio-Feixen-Sans, Arial;
+                      margin: 0;
+                      -moz-osx-font-smoothing: grayscale;
+                      -webkit-font-smoothing: antialiased;
+                    }
+
+                    .css-1j302im-RichText * {
+                      max-width: 100%;
+                    }
+
+                    .css-1j302im-RichText .ai-code-explanation {
+                      background: #EFEBE4;
+                      color: #05192D;
+                      display: none;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 14px;
+                      line-height: 1.5;
+                      overflow-x: hidden;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      white-space: pre-line;
+                    }
+
+                    .css-1j302im-RichText .ai-code-explanation:before {
+                      content: '• ';
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      background-color: transparent;
+                      border: 2px solid #05192D;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 12px;
+                      font-weight: 800;
+                      height: 32px;
+                      padding: 8px;
+                      padding-top: 0;
+                      padding-bottom: 0;
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-button::after {
+                      content: attr(data-value);
+                      margin-left: 8px;
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-button:active:not(:disabled),
+                    .css-1j302im-RichText .ai-explain-code-button:hover {
+                      background-color: rgba(48, 57, 105, 0.06);
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-negative-feedback-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      padding-top: 4px;
+                      padding-bottom: 4px;
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-negative-feedback-button:hover {
+                      background: #E5E1DA;
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-positive-feedback-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      padding-top: 4px;
+                      padding-bottom: 4px;
+                    }
+
+                    .css-1j302im-RichText .ai-explain-code-positive-feedback-button:hover {
+                      background: #E5E1DA;
+                    }
+
+                    .css-1j302im-RichText .ai-feedback {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-align-self: flex-end;
+                      -ms-flex-item-align: flex-end;
+                      align-self: flex-end;
+                      background: #EFEBE4;
+                      border-top: 1px solid #E1E1E8;
+                      color: #213147;
+                      display: none;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 12px;
+                      line-height: 1.5;
+                      overflow-x: hidden;
+                      padding: 8px;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      width: 100%;
+                    }
+
+                    .css-1j302im-RichText .ai-powered-text {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 10px;
+                      line-height: 1.5;
+                      margin-left: auto;
+                      overflow-x: hidden;
+                    }
+
+                    .css-1j302im-RichText .ai-powered-text::before {
+                      content: '';
+                    }
+
+                    @media screen and (min-width: 480px) {
+                      .css-1j302im-RichText .ai-powered-text::before {
+                        content: 'Powered by  ';
+                      }
+                    }
+
+                    .css-1j302im-RichText .ai-powered-text svg {
+                      height: 16px;
+                      width: 16px;
+                    }
+
+                    .css-1j302im-RichText .ai-was-this-helpful {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      gap: 4px;
+                    }
+
+                    @media screen and (min-width: 480px) {
+                      .css-1j302im-RichText .ai-was-this-helpful {
+                        gap: 8px;
+                      }
+                    }
+
+                    @media screen and (min-width: 768px) {
+                      .css-1j302im-RichText .ai-was-this-helpful {
+                        gap: 16px;
+                      }
+                    }
+
+                    .css-1j302im-RichText .atrule,
+                    .css-1j302im-RichText .attr-value,
+                    .css-1j302im-RichText .keyword {
+                      color: #008031;
+                    }
+
+                    .css-1j302im-RichText .attrName,
+                    .css-1j302im-RichText .builtin,
+                    .css-1j302im-RichText .char,
+                    .css-1j302im-RichText .inserted,
+                    .css-1j302im-RichText .selector,
+                    .css-1j302im-RichText .string,
+                    .css-1j302im-RichText .url {
+                      color: #5646A5;
+                    }
+
+                    .css-1j302im-RichText .boolean,
+                    .css-1j302im-RichText .constant,
+                    .css-1j302im-RichText .deleted,
+                    .css-1j302im-RichText .number,
+                    .css-1j302im-RichText .property,
+                    .css-1j302im-RichText .symbol,
+                    .css-1j302im-RichText .tag {
+                      color: #B75900;
+                    }
+
+                    .css-1j302im-RichText .cdata,
+                    .css-1j302im-RichText .comment,
+                    .css-1j302im-RichText .doctype,
+                    .css-1j302im-RichText .prolog {
+                      color: #5D6A77;
+                    }
+
+                    .css-1j302im-RichText .className,
+                    .css-1j302im-RichText .function {
+                      color: #0065D1;
+                    }
+
+                    .css-1j302im-RichText .code-block-footer {
+                      background-color: #EFEBE4;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: justify;
+                      -webkit-justify-content: space-between;
+                      justify-content: space-between;
+                      min-width: -webkit-fit-content;
+                      min-width: -moz-fit-content;
+                      min-width: fit-content;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      padding-top: 8px;
+                      padding-bottom: 8px;
+                      width: 100%;
+                    }
+
+                    .css-1j302im-RichText .code-copy-button {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      background-color: #E5E1DA;
+                      border-radius: 50%;
+                      color: #5D6A77;
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 12px;
+                      font-weight: 800;
+                      height: 32px;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                      line-height: 1.5;
+                      padding: 0;
+                      position: absolute;
+                      right: 16px;
+                      text-shadow: none;
+                      top: 16px;
+                      width: 32px;
+                    }
+
+                    .css-1j302im-RichText .code-copy-button svg {
+                      color: #5D6A77;
+                    }
+
+                    .css-1j302im-RichText .datacamp-exercise {
+                      margin-top: 30px;
+                    }
+
+                    .css-1j302im-RichText .no-bottom-margin {
+                      margin-bottom: 0 !important;
+                    }
+
+                    .css-1j302im-RichText .no-top-margin {
+                      margin-top: 0 !important;
+                    }
+
+                    .css-1j302im-RichText .p-margin {
+                      margin-bottom: 14px !important;
+                    }
+
+                    .css-1j302im-RichText .parent {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                    }
+
+                    .css-1j302im-RichText .workspace-link {
+                      color: #6B6A67;
+                      cursor: pointer;
+                      font-family: Studio-Feixen-Sans;
+                      font-size: 10px;
+                      font-weight: 800;
+                      height: 29px;
+                      letter-spacing: 1.5px;
+                      line-height: 12.5px;
+                      padding: 0;
+                      text-shadow: none;
+                      text-transform: uppercase;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                      -webkit-justify-content: center;
+                      justify-content: center;
+                    }
+
+                    .css-1j302im-RichText .workspace-link:active,
+                    .css-1j302im-RichText .workspace-link:focus,
+                    .css-1j302im-RichText .workspace-link:hover {
+                      color: #575653;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                    }
+
+                    .css-1j302im-RichText center {
+                      margin-top: 24px;
+                      margin-bottom: 24px;
+                    }
+
+                    .css-1j302im-RichText code {
+                      border-radius: 4px;
+                      min-height: 64px;
+                      padding: 4px;
+                    }
+
+                    .css-1j302im-RichText code[class*="language-"] {
+                      font-family: JetBrainsMonoNL;
+                      font-size: 0.875rem;
+                      font-weight: normal;
+                      line-height: 21px;
+                      white-space: pre-wrap;
+                    }
+
+                    .css-1j302im-RichText code[class*=language-]::selection {
+                      background-color: #E5E1DA;
+                    }
+
+                    .css-1j302im-RichText div[data-datacamp-exercise] {
+                      display: inline-block;
+                      max-width: 100%;
+                      overflow-x: auto;
+                    }
+
+                    .css-1j302im-RichText div[data-start-time] {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-box-flex-wrap: wrap;
+                      -webkit-flex-wrap: wrap;
+                      -ms-flex-wrap: wrap;
+                      flex-wrap: wrap;
+                      max-width: 100%;
+                    }
+
+                    .css-1j302im-RichText h2 {
+                      font-size: 1.75rem;
+                      font-weight: 700;
+                      letter-spacing: -0.5px;
+                      line-height: 1.2;
+                      margin-top: 16px;
+                      margin-bottom: 16px;
+                      scroll-margin-top: 80px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1j302im-RichText h2 {
+                        font-size: 2rem;
+                        margin-top: 24px;
+                        margin-bottom: 24px;
+                      }
+                    }
+
+                    .css-1j302im-RichText h3 {
+                      font-size: 1.25rem;
+                      margin-top: 8px;
+                      margin-bottom: 8px;
+                      scroll-margin-top: 80px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1j302im-RichText h3 {
+                        font-size: 1.5rem;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                      }
+                    }
+
+                    .css-1j302im-RichText h4 {
+                      font-size: 1.125rem;
+                      margin-bottom: 16px;
+                      margin-top: 8px;
+                      scroll-margin-top: 80px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                      .css-1j302im-RichText h4 {
+                        font-size: 1.25rem;
+                      }
+                    }
+
+                    .css-1j302im-RichText iframe {
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    }
+
+                    .css-1j302im-RichText img {
+                      border: 1px solid #05192d1a;
+                      height: auto;
+                      margin-top: 24px;
+                      margin-bottom: 24px;
+                    }
+
+                    .css-1j302im-RichText li {
+                      font-size: 1rem;
+                      margin-bottom: 12px;
+                    }
+
+                    .css-1j302im-RichText li>code,
+                    .css-1j302im-RichText p>code,
+                    .css-1j302im-RichText h4>code {
+                      background-color: #f7f3eb;
+                      color: #05192d;
+                    }
+
+                    .css-1j302im-RichText li>p {
+                      margin-bottom: 0;
+                    }
+
+                    .css-1j302im-RichText ol {
+                      display: inline-block;
+                      list-style: decimal;
+                      margin-bottom: 24px;
+                      padding-left: 32px;
+                    }
+
+                    .css-1j302im-RichText p {
+                      font-size: 1rem;
+                      max-width: 100%;
+                      margin-bottom: 24px;
+                      min-width: 100%;
+                    }
+
+                    .css-1j302im-RichText p * {
+                      font-family: Studio-Feixen-Sans !important;
+                    }
+
+                    .css-1j302im-RichText pre {
+                      background-color: #F7F3EB;
+                      border-radius: 4px;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-flex-direction: column;
+                      -ms-flex-direction: column;
+                      flex-direction: column;
+                      margin-bottom: 24px;
+                      padding: 0;
+                      position: relative;
+                    }
+
+                    .css-1j302im-RichText pre code {
+                      background-color: #F7F3EB;
+                      color: #05192d;
+                      display: inline-block;
+                      max-width: 100%;
+                      overflow-x: auto;
+                      padding: 16px;
+                      text-shadow: none;
+                    }
+
+                    .css-1j302im-RichText pre code::-webkit-scrollbar {
+                      background-color: transparent;
+                      height: 26px;
+                      scroll-padding-bottom: 8px;
+                    }
+
+                    .css-1j302im-RichText pre code::-webkit-scrollbar-thumb {
+                      background-color: #6B6A67;
+                      border: 8px solid;
+                      border-color: #f7f3eb;
+                      border-radius: 20px;
+                      opacity: 0.4;
+                    }
+
+                    .css-1j302im-RichText pre code::-webkit-scrollbar-thumb:hover {
+                      background-color: #575653;
+                    }
+
+                    .css-1j302im-RichText pre code[class*="language-"] {
+                      border-radius: 0;
+                      white-space: pre;
+                    }
+
+                    .css-1j302im-RichText pre[class*="language-"]::selection,
+                    .css-1j302im-RichText pre[class*="language-"] ::selection,
+                    .css-1j302im-RichText code[class*="language-"]::selection,
+                    .css-1j302im-RichText code[class*="language-"] ::selection {
+                      background-color: #E5E1DA;
+                    }
+
+                    .css-1j302im-RichText table {
+                      background-color: #F7F3EB !important;
+                      border: 1px solid !important;
+                      border-color: #E8E8EE !important;
+                      border-radius: 4px !important;
+                      border-spacing: 0px;
+                      font-size: 0.875rem;
+                      height: auto !important;
+                      margin-bottom: 24px;
+                      width: 100% !important;
+                    }
+
+                    .css-1j302im-RichText table::-webkit-scrollbar {
+                      display: block;
+                    }
+
+                    .css-1j302im-RichText table::-webkit-scrollbar-thumb {
+                      background-color: #6B6A67;
+                      border: 4px solid;
+                      border-color: #ffffff;
+                      border-radius: 20px;
+                      opacity: 0.4;
+                    }
+
+                    .css-1j302im-RichText table::-webkit-scrollbar-thumb:hover {
+                      background-color: #575653;
+                    }
+
+                    .css-1j302im-RichText table col {
+                      border: 1px solid !important;
+                      border-color: transparent !important;
+                    }
+
+                    .css-1j302im-RichText table colgroup {
+                      width: 100% !important;
+                    }
+
+                    .css-1j302im-RichText table tbody {
+                      width: 100% !important;
+                    }
+
+                    .css-1j302im-RichText table tbody tr th {
+                      text-align: initial;
+                    }
+
+                    .css-1j302im-RichText table tbody tr th:only-of-type {
+                      text-align: center;
+                    }
+
+                    .css-1j302im-RichText table tbody tr:first-child td {
+                      background-color: #F7F3EB !important;
+                      font-weight: 700;
+                    }
+
+                    .css-1j302im-RichText table tbody tr:last-child td {
+                      border-bottom: 1px solid white !important;
+                    }
+
+                    .css-1j302im-RichText table td {
+                      background-color: white !important;
+                      border: none;
+                      border-top: #E8E8EE 1px solid;
+                      height: auto !important;
+                    }
+
+                    .css-1j302im-RichText table td,
+                    .css-1j302im-RichText table th {
+                      padding: 15px 12px;
+                      text-overflow: ellipsis;
+                    }
+
+                    .css-1j302im-RichText table th {
+                      background-color: #F7F3EB !important;
+                      border: 1px solid;
+                      border-color: #F7F3EB;
+                    }
+
+                    .css-1j302im-RichText table thead+tbody tr:first-child td {
+                      background: white !important;
+                      font-weight: normal;
+                    }
+
+                    .css-1j302im-RichText table thead tr {
+                      background-color: #F7F3EB !important;
+                      border: 1px solid;
+                      border-color: #F7F3EB;
+                    }
+
+                    .css-1j302im-RichText table thead tr th {
+                      border: none;
+                      text-align: initial;
+                    }
+
+                    .css-1j302im-RichText table tr {
+                      border-bottom: 1px solid !important;
+                      border-color: #E8E8EE !important;
+                      height: auto !important;
+                    }
+
+                    .css-1j302im-RichText table+table {
+                      margin-top: 24px;
+                    }
+
+                    .css-1j302im-RichText ul {
+                      list-style: disc;
+                      margin-bottom: 24px;
+                      padding-left: 32px;
+                    }
+                  </style><span class="listed-menu css-1j302im-RichText">
+                    <p class="p-margin"><img height="482" width="963" alt="Image by Author"
+                        src="images/image8_0e61d0dad8.png"
+                        style="display: block; margin-left: auto; margin-right: auto;"></p>
+                    <h2 id="what-is-git?-<ahre">What is Git?</h2>
+                    <p class="p-margin"><a href="https://www.datacamp.com/blog/all-about-git" target="_blank"
+                        rel="noopener">Git </a>is a distributed, open-source version control system. It enables
+                      developers and data scientists to track code, merge changes and revert to older versions <a
+                        href="https://aws.amazon.com/devops/source-control/git" target="_blank" rel="noopener">-
+                        AWS</a>. It allows you to sync changes with a remote server. Due to its flexibility and
+                      popularity, Git has become an industry standard as it supports almost all development
+                      environments, command-line tools, and operating systems.�&nbsp;</p>
+                    <h2 id="how-does-git-work?-gitst">How does Git work?</h2>
+                    <p class="p-margin">Git stores your files and their development history in a local repository.
+                      Whenever you save changes you have made, Git creates a commit. A commit is a snapshot of current
+                      files. These commits are linked with each other, forming a development history graph, as shown
+                      below. It allows us to revert back to the previous commit, compare changes, and view the progress
+                      of the development project <a
+                        href="https://docs.microsoft.com/en-us/devops/develop/git/what-is-git" target="_blank"
+                        rel="noopener">- Azure DevOps</a>. The commits are identified by a unique hash which is used to
+                      compare and revert the changes made.�&nbsp;�&nbsp;</p>
+                    <p class="p-margin"><img height="180" width="787" alt="A graph of the development history"
+                        src="images/image4_2d866cbdae.png"
+                        style="display: block; margin-left: auto; margin-right: auto;" loading="lazy"></p>
+                    <p class="p-margin" style="text-align: center;"><strong>A graph of the development history</strong>
+                    </p>
+                    <h3 id="branches-thebr">Branches</h3>
+                    <p class="p-margin">The branches are copies of the source code that works parallel to the main
+                      version. To save the changes made, merge the branch into the main version. This feature promotes
+                      conflict-free teamwork. Each developer has his/her task, and by using branches, they can work on
+                      the new feature without the interference of other teammates. Once the task is finished, you can
+                      merge new features with the main version (master branch).�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="258" width="808"
+                        alt="Adding new feature to repository" src="images/image12_116ad072f7.png"
+                        loading="lazy"><br><strong>Adding new feature to repository�&nbsp;</strong></p>
+                    <h3 id="commits-there"><br>Commits</h3>
+                    <p class="p-margin">There are three states of files in Git: modified, staged, and commit. When you
+                      make changes in a file, the changes are saved in the local directory. They are not part of the Git
+                      development history. To create a commit, you need to first stage changed files. You can add or
+                      remove changes in the staging area and then package these changes as a commit with a message
+                      describing the changes.�&nbsp;�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="344" width="808"
+                        alt="Three states of files in Git" src="images/image14_bfaa7bb66e.png"
+                        loading="lazy"><br><strong>Three states of files in Git</strong></p>
+                    <h3 id="what-are-the-benefits-of-git?-
+<lia">What are the benefits of Git?</h3>
+                    <ul>
+                      <li aria-level="1">Track changes: It allows developers to view historical changes. Development
+                        history makes it easy to identify and fix bugs.</li>
+                      <li aria-level="1">IDE Integration: Due to its popularity, Git integration is available in all
+                        development environments, for example VSCode and JupyterLab.</li>
+                      <li aria-level="1">Team collaboration: A developer team can view their progress, and by using
+                        branches, they can work individually on a task and merge changes with the main version. Pull
+                        requests, resolving merge conflicts, and code review promote team collaboration.�&nbsp;</li>
+                      <li aria-level="1">Distributed VSC: In a distributed system, there is no centralized file storage.
+                        There are multiple backups for the same project. This approach allows developers to work offline
+                        and commit changes.�&nbsp;</li>
+                    </ul>
+                    <h2 id="git-for-data-science-projects-gitpr">Git for Data Science Projects</h2>
+                    <p class="p-margin">Git provides version control for scripts, metrics, data, and models. By using
+                      Git extension <a href="https://git-lfs.github.com" target="_blank" rel="noopener">git-lfs</a>, you
+                      can store and version a large database and machine learning models. In a typical data science
+                      project, you have a Jupyter notebook, dataset, model, metadata, and model metrics. The metadata
+                      includes files containing meta-information about the machine learning model, features, model
+                      parameters, and automation files. All of these are necessary for monitoring the progress of AI
+                      applications and resolving issues.�&nbsp;</p>
+                    <p class="p-margin">Track data science experiments help scientists revert accidental changes, select
+                      the best experiment based on the performance metric, and collaborate with other teammates. The
+                      diagram below shows how changes to data or code affect the metadata and output of the model.
+                      Tracking these changes can also help other teammates come up with a better solution. Learn <a
+                        href="https://www.datacamp.com/blog/all-about-git" target="_blank" rel="noopener">all about
+                        Git</a> in the latest blog from Summer Worsley.</p>
+                    <p class="p-margin" style="text-align: center;"><img height="520" width="803"
+                        alt="Git for a Data Science Project" src="images/image9_214bfea604.png"
+                        loading="lazy"><br><strong>Git for a Data Science Project�&nbsp;</strong></p>
+                    <h2 id="collaboration-with-github-<ahre">Collaboration with GitHub</h2>
+                    <p class="p-margin"><a href="https://github.com" target="_blank" rel="noopener">GitHub</a> is a
+                      cloud software development platform. It is commonly used for saving files, tracking changes, and
+                      collaborating on development projects. In recent years, GitHub has become the most popular social
+                      platform for software development communities. Individuals can contribute to open-source projects
+                      and bug reports, discuss new projects and discover new tools.�&nbsp;</p>
+                    <p class="p-margin">Data scientists and machine learning engineers are following the path of
+                      software developers and integrating the workflow with GitHub. By doing this, they can share their
+                      research work, allow community contribution, and collaborate with data teams. You can find all
+                      kinds of data science and machine learning projects, guides, tutorials, and resources on this
+                      platform. For students, the platform has become an opportunity to gain work experience and
+                      eventually land a job in a prestigious company.�&nbsp;</p>
+                    <h3 id="portfolio-mostt">Portfolio</h3>
+                    <p class="p-margin">Most technical recruiters will ask for the portfolio projects or GitHub profile.
+                      This helps them determine whether a candidate is a good fit for their company. It is highly
+                      recommended to create a GitHub profile and update it regularly. Hiring managers are always on the
+                      lookout for candidates that are highly experienced in software development and contribute to
+                      open-source projects. Being able to analyze the GitHub portfolio helps them prepare questions for
+                      technical interview sessions.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="392" width="799" alt="GitHub Profile"
+                        src="images/image16_53ad14e41a.jpg" loading="lazy"><br><strong>GitHub <a
+                          href="https://github.com/kingabzpro" target="_blank" rel="noopener">Profile</a></strong></p>
+                    <p class="p-margin">GitHub enables data scientists to showcase their projects, and it can also count
+                      as work experiences on your resume. Showcasing portfolio projects also creates opportunities to
+                      work together, launch a startup, and research work.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="327" width="746"
+                        alt="Portfolio Projects" src="images/image5_81bedcffff.jpg" loading="lazy"><br><strong>Portfolio
+                        Projects</strong></p>
+                    <h3 id="features-githu">Features</h3>
+                    <p class="p-margin">GitHub also provides various other features that are as important as showcasing
+                      a portfolio. It is necessary to learn about each feature so that you can incorporate them into
+                      your data science projects.�&nbsp;</p>
+                    <ul>
+                      <li aria-level="1">Open-source: GitHub provides a complete ecosystem for open-source projects. You
+                        can sponsor maintainers, contribute to a project, use the open-source tool in your existing
+                        project, and promote your work.�&nbsp;</li>
+                      <li aria-level="1">Community Collaboration: GitHub has become a community platform where issues,
+                        feature requests, code, and documentation contributions can be discussed.�&nbsp;</li>
+                      <li aria-level="1">Explore: GitHub Explore tab helps you discover new projects, trending tools,
+                        and developer events.�&nbsp;</li>
+                      <li aria-level="1">GitHub Gists: You can share the snippet of your code or embed it in a blog or
+                        website.�&nbsp;</li>
+                      <li aria-level="1">GitHub CLI: It allows you to perform merge requests, review code, check issues,
+                        and monitor progress from the command line program.�&nbsp;</li>
+                      <li aria-level="1">Free Storage: unlimited private and public repositories storage.</li>
+                      <li aria-level="1">Web hosting: You can publish your portfolio site or documentation. GitHub pages
+                        provide easy to build and deploy website experience.�&nbsp;</li>
+                      <li aria-level="1">Codespace: a cloud development environment integrated with your GitHub
+                        repository.�&nbsp;</li>
+                      <li aria-level="1">Project: a customizable, flexible tool for planning and tracking the work on
+                        GitHub.</li>
+                      <li aria-level="1">Automation: GitHub Action automates development workflow such as build, test,
+                        publish, release, and deployment.</li>
+                      <li aria-level="1">Sponsor: You can support your favorite open-source project or developers by
+                        paying a monthly or one-time fee. It also allows developers to use third-party payment platforms
+                        such as ko-fi.�&nbsp;</li>
+                    </ul>
+                    <h2 id="basic-commands-befor">Basic Commands</h2>
+                    <p class="p-margin">Before we jump into managing data science projects, let's learn about the most
+                      common Git commands that you will be using in every data science project. The basic commands
+                      include initializing the Git repository, saving changes, checking logs, pushing the changes to the
+                      remote server, and merging.�&nbsp;</p>
+                    <ul>
+                      <li aria-level="1"><strong>git init</strong>�&nbsp;create a Git repository in a local directory.
+                      </li>
+                      <li aria-level="1"><strong>git clone</strong> <remote-repo-address>: copy the entire repository
+                          from a remote server to remote directory. You can also use it to copy local
+                          repositories.</remote-repo-address></li>
+                      <li aria-level="1"><strong>git add</strong>
+                        <file.txt>: add a single file or multiple files and folders to the staging area.</file.txt>
+                      </li>
+                      <li aria-level="1"><strong>git commit</strong> –m “Message”: create a snapshot of changes and save
+                        it in the repository.�&nbsp;</li>
+                      <li aria-level="1"><strong>git config</strong>�&nbsp;use to set user-specific configurations like
+                        email, username, and file format.�&nbsp;</li>
+                      <li aria-level="1"><strong>git status</strong>�&nbsp;shows the list of changed files or files that
+                        have yet to be staged and committed.�&nbsp;�&nbsp;</li>
+                      <li aria-level="1"><strong>git push</strong> <remote-name> <branch-name>: send local commits to
+                            remote branch of repository.�&nbsp;�&nbsp;</branch-name></remote-name></li>
+                      <li aria-level="1"><strong>git checkout</strong> -b <branch-name>: creates a new branch and
+                          switches to a new branch.</branch-name></li>
+                      <li aria-level="1"><strong>git remote</strong> –v: view all remote repositories.</li>
+                      <li aria-level="1"><strong>git remote add</strong> <remote-name> <host-or-remoteurl>: add remote
+                            server to local repository.�&nbsp;</host-or-remoteurl></remote-name></li>
+                      <li aria-level="1"><strong>git branch</strong> –d <branch-name>: delete the branch.</branch-name>
+                      </li>
+                      <li aria-level="1"><strong>git pull</strong>�&nbsp;merge commits to a local directory from a
+                        remote repository.�&nbsp;</li>
+                      <li aria-level="1"><strong>git merge</strong> <branch-name>: after resolving merge conflicts the
+                          command blends selected branch into the current branch.</branch-name></li>
+                      <li aria-level="1"><strong>git log</strong>�&nbsp;show a detailed list of commits for the current
+                        branch.</li>
+                    </ul>
+                    <p class="p-margin" style="text-align: center;"><img height="523" width="890"
+                        alt="Complete Development with GitHub" src="images/image10_1a4384e5fa.png"
+                        loading="lazy"><br><strong>Complete Development with GitHub</strong></p>
+                    <p class="p-margin">If you are interested in learning more commands, check out the <a
+                        href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf" target="_blank"
+                        rel="noopener">Git cheat sheet</a> by Gitlab.�&nbsp;</p>
+                    <h2 id="getting-started-inthi">Getting started</h2>
+                    <p class="p-margin">In this section, we are going to use Git to track a data science project and
+                      GitHub as a remote server. We will learn how to install Git, create and clone a repository from
+                      GitHub, run machine learning experiments, and push changes (notebook, model, data) to GitHub using
+                      Windows PowerShell 7.�&nbsp;�&nbsp;</p>
+                    <h3 id="installing-git-gitsu">Installing Git</h3>
+                    <p class="p-margin">Git supports all operating systems. You can install it using command-line tools
+                      or directly download and install the setup.�&nbsp;</p>
+                    <p class="p-margin">Linux</p>
+                    <p class="p-margin">For Debian/Ubuntu-based operating systems use `apt-get install git`, and if you
+                      are using another Linux-based system, check out the complete list of installing commands <a
+                        href="https://git-scm.com/download/linux" target="_blank" rel="noopener">here</a>.</p>
+                    <p class="p-margin">macOS</p>
+                    <p class="p-margin">If you have <a href="https://brew.sh" target="_blank"
+                        rel="noopener">homebrew</a> installed, use this command to download and install Git: `brew
+                      install git`. You can also download the binary <a
+                        href="https://sourceforge.net/projects/git-osx-installer" target="_blank"
+                        rel="noopener">installer</a> and run the setup.</p>
+                    <p class="p-margin">Windows</p>
+                    <p class="p-margin">Installing Git on Windows is hassle-free. Just go to the download <a
+                        href="https://git-scm.com/download/win" target="_blank" rel="noopener">page</a>, click on the
+                      specific Windows version, and download and install the setup. If you have a <a
+                        href="https://docs.microsoft.com/en-us/windows/package-manager/winget" target="_blank"
+                        rel="noopener">winget tool</a>, you can install it by typing `winget install --id Git.Git -e
+                      --source winget` in PowerShell.�&nbsp;</p>
+                    <p class="p-margin">After installing Git, make sure you have configured the user name and email.
+                      This information is used to sign the commits.�&nbsp;</p>
+                    <pre
+                      class="language-git"><code>git config --global user.name "your-user-name"
+git config --global user.email "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8af3e5fff8caefe7ebe3e6a4e9e5e7">[email�&nbsp;protected]</a>"</code></pre>
+                    <p class="p-margin">For more in-depth information on how to install Git, click <a
+                        href="https://www.datacamp.com/tutorial/git-install-tutorial" target="_blank"
+                        rel="noopener">here</a>.�&nbsp;</p>
+                    <h3 id="initializing-the-project-ifyou">Initializing the Project</h3>
+                    <p class="p-margin">If you have a GitHub account, click on the + button and select a new repository.
+                      After that, type the repository name and add a simple description. It will create an empty public
+                      repository.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="435" width="625" alt="Creating project"
+                        src="images/image2_2fa8006fa6.jpg" loading="lazy"><br><strong>Creating project</strong></p>
+                    <p class="p-margin">There are many ways to clone remote repositories to the local directory, and
+                      GitHub provides a detailed guide on how to clone, add remote, and initialize a Git
+                      project.�&nbsp;�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="552" width="1000" alt="GitHub Clone"
+                        src="images/image7_09c4245bee.jpg" loading="lazy"><br><strong>GitHub Clone</strong></p>
+                    <p class="p-margin">We can simply clone the repository by providing an HTTPS link. Make sure you are
+                      in the working directory using the command prompt or PowerShell.�&nbsp;</p>
+                    <pre class="language-git"><code>git clone https://github.com/kingabzpro/DataCamp-Git.git
+
+&gt;&gt;&gt; Cloning into 'DataCamp-Git'...
+&gt;&gt;&gt; warning: You appear to have cloned an empty repository.
+
+cd .\DataCamp-Git\</code></pre>
+                    <p class="p-margin">OR</p>
+                    <p class="p-margin">Create a new directory called “DataCamp-Git” and initialize Git using a simple
+                      command. After that, add a connection to the remote repository so that you can sync your work with
+                      GitHub.</p>
+                    <pre class="language-git"><code>mkdir DataCamp-Git
+cd .\DataCamp-Git
+git init
+
+&gt;&gt;&gt; Initialized empty Git repository in C:/Repository/GitHub/DataCamp-Git/.git/
+
+git remote add origin https://github.com/kingabzpro/DataCamp-Git.git</code></pre>
+                    <p class="p-margin">OR</p>
+                    <p class="p-margin">If you already have a project in a directory, just initialize Git using `git
+                      init` and add GitHub remote, as shown above.�&nbsp;</p>
+                    <h3 id="simple-commit-befor">Simple Commit</h3>
+                    <p class="p-margin">Before we add files to our repository, make sure you are in the correct local
+                      directory.�&nbsp;</p>
+                    <p class="p-margin">We will start simple and create a README file with the heading DataCamp-Git.
+                      Then, we will add it to the staging area by using `git add`.�&nbsp;</p>
+                    <pre class="language-git"><code>echo "# DataCamp-Git" &gt;&gt; README.md
+git add README.md</code></pre>
+                    <p class="p-margin">Git status shows that we are on the main branch and the `README.md` file is
+                      staged and ready to be committed.�&nbsp;�&nbsp;</p>
+                    <pre class="language-git"><code>git status
+
+&gt;&gt;&gt; On branch main
+&gt;&gt;&gt; No commits yet
+&gt;&gt;&gt; Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md</file></code></pre>
+                    <p class="p-margin">To create our first commit, we will use `git commit` with a message. As we can
+                      observe, the first commit is added under the ed9c886 hash.</p>
+                    <pre class="language-git"><code>git commit -m "first commit"
+
+&gt;&gt;&gt; [main (root-commit) ed9c886] first commit
+&gt;&gt;&gt; 1 file changed, 1 insertion(+)
+&gt;&gt;&gt; create mode 100644 README.md</code></pre>
+                    <h3 id="adding-project-files-wewil">Adding Project Files</h3>
+                    <p class="p-margin">We will use the DataCamp workspace <a
+                        href="https://app.datacamp.com/workspace/w/94a70e98-585a-4dc4-b307-8a6627800ae2" target="_blank"
+                        rel="noopener">MasterCard Stock Price with LSTM and GRU </a>and download files. The author of
+                      the project has preprocessed the data and training time series data on the LSTM and GRU models.
+                      Learn more about the project by reading <a
+                        href="https://www.datacamp.com/tutorial/tutorial-for-recurrent-neural-network" target="_blank"
+                        rel="noopener">Recurrent Neural Network Tutorial (RNN)</a>.</p>
+                    <p class="p-margin">To save the model file, we have added a new code cell in the project's Jupyter
+                      notebook. The new script will create a new directory called “model” and save both LSTM and GRU
+                      models.�&nbsp;</p>
+                    <pre class="language-git"><code>!mkdir -p model
+model_lstm.save('model/LSTM')
+model_gru.save('model/GRU')</code></pre>
+                    <p class="p-margin">As we can see, the Git repository has a data folder containing CSV files, the
+                      model folder with the model’s weight and metadata.�&nbsp;</p>
+                    <p class="p-margin"><img height="279" width="238" alt="Git Data Folder"
+                        src="images/image1_eaf652561a.png" loading="lazy"></p>
+                    <p class="p-margin">We will now stage all the files. You can add any directory, file, or data after
+                      the initial command.�&nbsp;</p>
+                    <pre class="language-git"><code>git add .\data .\model LSTM_GRU.ipynb RNN.png</code></pre>
+                    <p class="p-margin">OR</p>
+                    <p class="p-margin">If you want to add all files to the staging area, then use dot.�&nbsp;</p>
+                    <pre class="language-git"><code>git add .</code></pre>
+                    <h3 id="commit-and-push-wewil">Commit and Push</h3>
+                    <p class="p-margin">We will commit all the changes with a simple message, and the output shows all
+                      the new files in create mode.�&nbsp;</p>
+                    <pre class="language-git"><code>git commit -m "project files added"
+
+&gt;&gt;&gt; [main aa3e19a] project files added
+&gt;&gt;&gt;  10 files changed, 5020 insertions(+)
+&gt;&gt;&gt;  create mode 100644 LSTM_GRU.ipynb
+&gt;&gt;&gt;  create mode 100644 RNN.png
+&gt;&gt;&gt;  create mode 100644 data/Mastercard_stock_history.csv
+&gt;&gt;&gt;  create mode 100644 data/Mastercard_stock_info.csv
+&gt;&gt;&gt;  create mode 100644 model/GRU/saved_model.pb
+&gt;&gt;&gt;  create mode 100644 model/GRU/variables/variables.data-00000-of-00001
+&gt;&gt;&gt;  create mode 100644 model/GRU/variables/variables.index
+&gt;&gt;&gt;  create mode 100644 model/LSTM/saved_model.pb
+&gt;&gt;&gt;  create mode 100644 model/LSTM/variables/variables.data-00000-of-00001
+create mode 100644 model/LSTM/variables/variables.index</code></pre>
+                    <p class="p-margin">Syncing with GitHub remote repository requires a remote name and branch name
+                      `git push <remote-name> <branch-name>`. If you have only one remote and one branch, then using
+                          `git push` will work.�&nbsp;�&nbsp;</branch-name></remote-name></p>
+                    <p class="p-margin">After `git push`, the pop-up window will ask for the credentials, just add your
+                      GitHub username or password. You can also generate <a href="https://github.com/settings/tokens"
+                        target="_blank" rel="noopener">Personal access tokens</a> and add them instead of the password.
+                      Learn more by reading the <a href="https://www.datacamp.com/tutorial/git-push-pull"
+                        target="_blank" rel="noopener">Git Push and Pull Tutorial</a>.</p>
+                    <pre class="language-git"><code>git push
+
+&gt;&gt;&gt; Enumerating objects: 21, done.
+&gt;&gt;&gt; Counting objects: 100% (21/21), done.
+&gt;&gt;&gt; Delta compression using up to 4 threads
+&gt;&gt;&gt; Compressing objects: 100% (19/19), done.
+&gt;&gt;&gt; Writing objects: 100% (21/21), 1.83 MiB | 1.59 MiB/s, done.
+&gt;&gt;&gt; Total 21 (delta 2), reused 0 (delta 0), pack-reused 0
+&gt;&gt;&gt; remote: Resolving deltas: 100% (2/2), done.
+&gt;&gt;&gt; To https://github.com/kingabzpro/DataCamp-Git.git
+&gt;&gt;&gt;  * [new branch]      main -&gt; main</code></pre>
+                    <p class="p-margin">We are going to check our GitHub repository <a
+                        href="https://github.com/kingabzpro/DataCamp-Git" target="_blank"
+                        rel="noopener">kingabzpro/DataCamp-Git</a> to see whether we have successfully pushed the
+                      changes to remote. The GitHub repository has all the files, data, and models.</p>
+                    <p class="p-margin" style="text-align: center;"><img height="424" width="908"
+                        alt="Remote push to GitHub" src="images/image15_4611e9eaee.jpg"
+                        loading="lazy"><br><strong>Remote push to GitHub</strong></p>
+                    <h3 id="git-branches-itisr">Git Branches</h3>
+                    <p class="p-margin">It is recommended to work with branches: for example, if you want to work on
+                      project documentation, create a documentation branch using `git checkout` or `git branch`. Make
+                      changes in the README file and when you have finalized the changes, merge the branch with the
+                      base.�&nbsp;</p>
+                    <p class="p-margin">In our case, we have created and switched to a new branch called `readme`.</p>
+                    <pre class="language-git"><code>git checkout -b readme</code></pre>
+                    <p class="p-margin">Let’s edit the README file by adding a description to the project and link the
+                      RNN DataCamp workspace and tutorial. After that, we will stage changes and save a snapshot of
+                      changes with a message.</p>
+                    <pre class="language-git"><code>git add README.md
+git commit -m "project description and links to blog"
+
+&gt;&gt;&gt; [readme f3b8b9b] project description and links to blog
+&gt;&gt;&gt;  1 file changed, 8 insertions(+)</code></pre>
+                    <p class="p-margin">The remote repository doesn't have a readme branch. To create a new branch and
+                      push changes, we will use “readme:readme”. The output of the command shows that new branches have
+                      been created and both local and remote `readme` branches are synced.�&nbsp;</p>
+                    <pre class="language-git"><code>git push origin readme:readme
+&gt;&gt;&gt; remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+&gt;&gt;&gt; remote: Create a pull request for 'readme' on GitHub by visiting:
+&gt;&gt;&gt; remote:  https://github.com/kingabzpro/DataCamp-Git/pull/new/readme
+&gt;&gt;&gt; remote:
+To https://github.com/kingabzpro/DataCamp-Git.git
+&gt;&gt;&gt;  * [new branch]      readme -&gt; readme</code></pre>
+                    <p class="p-margin">You can observe that we have successfully pushed the local branch to GitHub with
+                      a modified version of README.md file.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="721" width="909"
+                        alt="Readme branch on GitHub" src="images/image11_33c99665a4.jpg"
+                        loading="lazy"><br><strong>Readme branch on GitHub</strong></p>
+                    <h3 id="pull-request-thisf">Pull Request</h3>
+                    <p class="p-margin">This functionality is common for organizations. For example,�&nbsp; a software
+                      developer has worked on a new feature and wants to merge changes to the main remote branch. We
+                      will now create pull requests using GitHub GUI by clicking on the pull request button. After that,
+                      select the readme branch�&nbsp; which we want to merge with the base (main). You can type a
+                      detailed explanation of what features were added and click on the pull request button.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="535" width="916"
+                        alt="Pull request from readme to main branch" src="images/image6_b6539df318.jpg"
+                        loading="lazy"><br><strong>Pull request from readme to main branch</strong></p>
+                    <p class="p-margin">The maintainer of the repository will compare your changes and merge them when
+                      they have passed all the tests. In our case, you are the maintainer, so click on the merge request
+                      to blend changes with the main branch.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="164" width="916"
+                        alt="GitHub Merge Pull Request" src="images/image13_81d7ecb8d9.jpg"
+                        loading="lazy"><br><strong>Merge pull request on GitHub</strong></p>
+                    <p class="p-margin">Congratulations, we have successfully created a pull request and merged it with
+                      the main branch. You can view the changes on the main branch <a
+                        href="https://github.com/kingabzpro/DataCamp-Git" target="_blank"
+                        rel="noopener">here</a>.�&nbsp;</p>
+                    <p class="p-margin">If you want to view all the changes within your git repository, just type `git
+                      log`, and it will show historical changes to your project. Logging changes in data science
+                      projects are important, and Git helps us track all the changes, even large datasets.�&nbsp;</p>
+                    <p class="p-margin" style="text-align: center;"><img height="288" width="646"
+                        alt="History of Git Logs" src="images/image3_56c7054b4e.png" loading="lazy"><br><strong>History
+                        of Git Logs</strong></p>
+                    <h2 id="conclusion-gitop">Conclusion</h2>
+                    <p class="p-margin">GitOps are crucial for data application development. They have become an
+                      essential skill for all types of IT jobs; even academic researchers are using them to share
+                      experimental code with a wider audience. On the other hand, GitHub plays a larger role in
+                      promoting open-source projects by providing a free software development ecosystem for all.�&nbsp;
+                    </p>
+                    <p class="p-margin">In this tutorial, we have learned about Git and GitHub and why they are
+                      important for data science projects. The tutorial also introduces you to basic Git commands and
+                      provides hands-on experience on how to track changes in data, model, and code. If you are
+                      interested in learning more about Git, then take an 
+                    <p class="p-margin"><br><br></p>
+                  </span>
+                </div>
+              </div>
+              <style data-emotion="css mh0p4z-FAQSection">
+                .css-mh0p4z-FAQSection {
+                  background-color: transparent;
+                }
+              </style>
+              <style data-emotion="css 1x538us-FAQSection">
+                .css-1x538us-FAQSection {
+                  box-sizing: border-box;
+                  margin: 0;
+                  min-width: 0;
+                  background-color: transparent;
+                }
+              </style>
+              <div class="css-1x538us-FAQSection">
+                <style data-emotion="css 1r566ff-FAQSection">
+                  .css-1r566ff-FAQSection {
+                    padding-bottom: 48px;
+                    padding-top: 24px;
+                    padding-left: 0;
+                    padding-right: 0;
+                  }
+
+                  .css-1r566ff-FAQSection div.faq-entry:first-of-type {
+                    border-radius: 4px 4px 0px 0px;
+                  }
+
+                  .css-1r566ff-FAQSection div.faq-entry:last-of-type {
+                    border-bottom: 1px solid rgba(5, 25, 45, 0.1);
+                    border-radius: 0px 0px 4px 4px;
+                  }
+                </style>
+                <style data-emotion="css 66418b-FAQSection">
+                  .css-66418b-FAQSection {
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    width: 100%;
+                    max-width: container;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 800px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    padding-bottom: 48px;
+                    padding-top: 24px;
+                    padding-left: 0;
+                    padding-right: 0;
+                  }
+
+                  .css-66418b-FAQSection div.faq-entry:first-of-type {
+                    border-radius: 4px 4px 0px 0px;
+                  }
+
+                  .css-66418b-FAQSection div.faq-entry:last-of-type {
+                    border-bottom: 1px solid rgba(5, 25, 45, 0.1);
+                    border-radius: 0px 0px 4px 4px;
+                  }
+                </style>
+                <div class="css-66418b-FAQSection">
+                  <style data-emotion="css 1peva9n-Box">
+                    .css-1peva9n-Box {
+                      box-sizing: border-box;
+                      margin: 0;
+                      min-width: 0;
+                    }
+                  </style><span class="listed-menu css-1peva9n-Box">
+                    <style data-emotion="css ergh9c-FAQSection">
+                      .css-ergh9c-FAQSection {
+                        font-weight: 800;
+                        letter-spacing: -1px;
+                        line-height: 125%;
+                        margin-bottom: 24px;
+                        text-align: start;
+                      }
+                    </style>
+                    <style data-emotion="css 7iv9os-FAQSection">
+                      .css-7iv9os-FAQSection {
+                        color: #05192D;
+                        font-weight: 800;
+                        letter-spacing: -1px;
+                        line-height: 125%;
+                        margin-bottom: 24px;
+                        text-align: start;
+                      }
+                    </style>
+                    <style data-emotion="css pxlvjb-FAQSection">
+                      .css-pxlvjb-FAQSection {
+                        box-sizing: border-box;
+                        margin: 0;
+                        min-width: 0;
+                        font-size: 1.75rem;
+                        font-weight: 700;
+                        letter-spacing: -0.5px;
+                        line-height: 1.2;
+                        margin-top: 0;
+                        color: #05192D;
+                        font-weight: 800;
+                        letter-spacing: -1px;
+                        line-height: 125%;
+                        margin-bottom: 24px;
+                        text-align: start;
+                      }
+
+                      @media screen and (min-width: 992px) {
+                        .css-pxlvjb-FAQSection {
+                          font-size: 2rem;
+                        }
+                      }
+                    </style>
+                    
+                  
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script data-cfasync="false" src="js/email-decode.min.js"></script>
+  
+</body>
+
+</html>
